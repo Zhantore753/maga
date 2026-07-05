@@ -1,0 +1,218 @@
+:root {
+  --bg: #f5f6f8;
+  --card: #ffffff;
+  --text: #1a1d21;
+  --muted: #6b7280;
+  --border: #e2e5ea;
+  --accent: #3b6ef6;
+  --accent-text: #ffffff;
+  --correct-bg: #e3f6e8;
+  --correct-border: #34a853;
+  --wrong-bg: #fdeaea;
+  --wrong-border: #e05252;
+  --warn: #b45309;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121417;
+    --card: #1c2025;
+    --text: #e8eaed;
+    --muted: #9aa3af;
+    --border: #2c323a;
+    --accent: #5b8af8;
+    --correct-bg: #16321e;
+    --correct-border: #3dbb62;
+    --wrong-bg: #3a1c1c;
+    --wrong-border: #e56565;
+    --warn: #f0a94b;
+  }
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+header h1 { font-size: 1.2rem; }
+
+.lang-switch { display: flex; gap: 4px; }
+
+.lang-btn {
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--muted);
+  padding: 4px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.lang-btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-text);
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 8px 20px 48px;
+}
+
+.screen h2 { margin-bottom: 16px; font-size: 1.35rem; }
+.hidden { display: none !important; }
+.muted { color: var(--muted); font-size: 0.9rem; }
+
+.card-list { display: flex; flex-direction: column; gap: 12px; }
+
+.topic-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px 20px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+  transition: border-color 0.15s;
+}
+
+.topic-card:hover { border-color: var(--accent); }
+.topic-card .muted { display: block; font-weight: 400; margin-top: 4px; }
+
+.setup-group { margin: 20px 0; }
+.setup-group > label { display: block; font-weight: 600; margin-bottom: 8px; }
+
+.chip-row { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.chip {
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  padding: 8px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.chip.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-text);
+}
+
+.primary-btn, .secondary-btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.primary-btn {
+  background: var(--accent);
+  color: var(--accent-text);
+  border: none;
+}
+
+.secondary-btn {
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 4px 0;
+  margin-bottom: 8px;
+}
+
+.quiz-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.progress-track {
+  flex: 1;
+  height: 8px;
+  background: var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0%;
+  background: var(--accent);
+  border-radius: 4px;
+  transition: width 0.25s;
+}
+
+.review-badge {
+  color: var(--warn);
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+#q-text { font-size: 1.15rem; margin-bottom: 16px; }
+#multi-hint { margin-bottom: 12px; }
+
+#options { display: flex; flex-direction: column; gap: 10px; }
+
+.option {
+  background: var(--card);
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  padding: 13px 16px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 1rem;
+  color: var(--text);
+  transition: border-color 0.1s;
+}
+
+.option:hover:not(:disabled) { border-color: var(--accent); }
+.option.selected { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 10%, var(--card)); }
+.option.correct { background: var(--correct-bg); border-color: var(--correct-border); }
+.option.wrong { background: var(--wrong-bg); border-color: var(--wrong-border); }
+.option:disabled { cursor: default; opacity: 1; }
+
+.score-circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 6px solid var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 24px auto;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.score-detail { text-align: center; font-size: 1.05rem; margin-bottom: 24px; }

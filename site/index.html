@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>КТ Тренажёр</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="app-title" data-str="appTitle">КТ Тренажёр</h1>
+    <div class="lang-switch">
+      <button id="lang-ru" class="lang-btn">RU</button>
+      <button id="lang-kz" class="lang-btn">KZ</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Topic list -->
+    <section id="screen-topics" class="screen">
+      <h2 data-str="chooseTopic">Выберите тему</h2>
+      <div id="topic-list" class="card-list"></div>
+    </section>
+
+    <!-- Test setup -->
+    <section id="screen-setup" class="screen hidden">
+      <button class="link-btn" id="back-to-topics">&larr; <span data-str="back">Назад</span></button>
+      <h2 id="setup-topic-title"></h2>
+      <p id="setup-stats" class="muted"></p>
+
+      <div class="setup-group">
+        <label data-str="questionCount">Количество вопросов</label>
+        <div class="chip-row" id="count-chips"></div>
+      </div>
+
+      <div class="setup-group">
+        <label data-str="questionLang">Язык вопросов</label>
+        <div class="chip-row" id="qlang-chips">
+          <button class="chip" data-qlang="all" data-str="allLangs">Все</button>
+          <button class="chip" data-qlang="ru">Русский</button>
+          <button class="chip" data-qlang="kz">Қазақша</button>
+        </div>
+      </div>
+
+      <button id="start-test" class="primary-btn" data-str="startTest">Начать тест</button>
+      <button id="start-mistakes" class="secondary-btn hidden"></button>
+    </section>
+
+    <!-- Quiz -->
+    <section id="screen-quiz" class="screen hidden">
+      <div class="quiz-top">
+        <button class="link-btn" id="quit-quiz">&#10005;</button>
+        <div class="progress-track"><div id="progress-bar"></div></div>
+        <span id="quiz-counter" class="muted"></span>
+      </div>
+      <div id="review-badge" class="review-badge hidden" data-str="needsReview">⚠ вопрос может содержать ошибку</div>
+      <h2 id="q-text"></h2>
+      <p id="multi-hint" class="muted hidden" data-str="multiHint">Выберите все правильные варианты</p>
+      <div id="options"></div>
+      <button id="check-btn" class="primary-btn hidden" data-str="check">Проверить</button>
+      <button id="next-btn" class="primary-btn hidden" data-str="next">Дальше</button>
+    </section>
+
+    <!-- Results -->
+    <section id="screen-results" class="screen hidden">
+      <h2 data-str="results">Результат</h2>
+      <div class="score-circle"><span id="score-pct"></span></div>
+      <p id="score-detail" class="score-detail"></p>
+      <button id="retest-wrong" class="primary-btn hidden"></button>
+      <button id="again-btn" class="secondary-btn" data-str="newTest">Новый тест</button>
+      <button id="home-btn" class="secondary-btn" data-str="toTopics">К темам</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

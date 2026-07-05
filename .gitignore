@@ -1,0 +1,7 @@
+# source study materials (large, possibly not for public repos)
+algorithms/
+# pipeline outputs (site/data holds the published copies)
+output/
+# python
+__pycache__/
+*.pyc
