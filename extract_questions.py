@@ -15,6 +15,7 @@ are resumed.
 
 import argparse
 import base64
+import hashlib
 import io
 import json
 import sys
@@ -35,6 +36,7 @@ IMAGE_EXTS = {
 MAX_IMAGE_BYTES = 4_000_000        # downscale images above this (API limit ~5MB)
 MAX_IMAGE_EDGE = 2576              # max useful resolution on Opus 4.8
 MAX_PDF_BYTES = 22_000_000         # base64 inflation must stay under 32MB request cap
+MAX_DOCX_CHARS = 18_000            # chunk longer DOCX text across several requests
 MAX_BATCH_BYTES = 150_000_000      # stay under the 256MB per-batch cap
 MAX_BATCH_REQUESTS = 300
 POLL_SECONDS = 60
@@ -150,15 +152,34 @@ def docx_images(path: Path):
                     yield Path(name).name, zf.read(name), IMAGE_EXTS[ext]
 
 
+def unit_id(source: str) -> str:
+    """Stable ID derived from the source label, so adding/removing files in the
+    input folder never misaligns the resume state."""
+    return "u" + hashlib.sha1(source.encode("utf-8")).hexdigest()[:16]
+
+
+def chunk_text(text: str, size: int = MAX_DOCX_CHARS, overlap: int = 1200) -> list[str]:
+    """Split long text at line boundaries; overlap tails so a question cut at
+    a boundary still appears whole in the next chunk (dedup drops the copy)."""
+    if len(text) <= size:
+        return [text]
+    chunks, current = [], ""
+    for line in text.split("\n"):
+        if current and len(current) + len(line) > size:
+            chunks.append(current)
+            current = current[-overlap:]
+        current = f"{current}\n{line}" if current else line
+    if current:
+        chunks.append(current)
+    return chunks
+
+
 def collect_units(input_dir: Path) -> list[dict]:
     """One unit = one API request: {id, source, content_blocks}."""
     units = []
-    idx = 0
 
     def add(source: str, blocks: list) -> None:
-        nonlocal idx
-        units.append({"id": f"u{idx:05d}", "source": source, "blocks": blocks})
-        idx += 1
+        units.append({"id": unit_id(source), "source": source, "blocks": blocks})
 
     files = sorted(p for p in input_dir.rglob("*") if p.is_file())
     for path in files:
@@ -189,10 +210,14 @@ def collect_units(input_dir: Path) -> list[dict]:
         elif ext == ".docx":
             text = docx_text(path)
             if text.strip():
-                add(f"{rel} (text)", [{
-                    "type": "text",
-                    "text": f"{USER_PROMPT}\n\n<document>\n{text}\n</document>",
-                }])
+                chunks = chunk_text(text)
+                for ci, chunk in enumerate(chunks, start=1):
+                    label = (f"{rel} (text)" if len(chunks) == 1
+                             else f"{rel} (text {ci}/{len(chunks)})")
+                    add(label, [{
+                        "type": "text",
+                        "text": f"{USER_PROMPT}\n\n<document>\n{chunk}\n</document>",
+                    }])
             for name, data, media in docx_images(path):
                 block = prepare_image(data, media, f"{rel}/{name}")
                 if block:
@@ -208,7 +233,7 @@ def unit_to_request(unit: dict, model: str) -> dict:
         "custom_id": unit["id"],
         "params": {
             "model": model,
-            "max_tokens": 16000,
+            "max_tokens": 32000,
             "system": SYSTEM_PROMPT,
             "messages": [{"role": "user", "content": unit["blocks"]}],
             "output_config": {
