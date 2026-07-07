@@ -29,9 +29,11 @@ import anthropic
 POLL_SECONDS = 30
 
 SYSTEM_PROMPT = """\
-You are an expert in computer science, algorithms, and programming, answering
-exam questions from КТ (комплексное тестирование) for a CS degree program.
-Questions are in Russian or Kazakh.
+You are an expert in computer science, mathematics, and programming, answering
+exam questions from КТ (комплексное тестирование) for a degree program.
+Questions are in Russian or Kazakh. They may contain LaTeX notation ($...$)
+and bracketed descriptions of figures or tables. Solve math problems carefully
+step by step before choosing the answer.
 
 You are given a question and its answer options (0-indexed). Determine which
 option(s) are correct. Most questions have exactly one correct answer; select
@@ -138,6 +140,10 @@ def main() -> int:
                 q["ai_confidence"] = answer["confidence"]
                 if answer["confidence"] == "low":
                     q["needs_review"] = True
+                elif answer["confidence"] == "high":
+                    # extraction flags unmarked questions; a confident solve
+                    # resolves that doubt
+                    q["needs_review"] = False
                 solved += 1
                 continue
         q["answer_source"] = "none"

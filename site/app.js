@@ -183,6 +183,19 @@ function filteredQuestions() {
     q => state.setup.qlang === "all" || q._lang === state.setup.qlang);
 }
 
+/* Render $...$ LaTeX inside an element (math topics). No-op until KaTeX loads. */
+function renderMath(el) {
+  if (window.renderMathInElement) {
+    window.renderMathInElement(el, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+      ],
+      throwOnError: false,
+    });
+  }
+}
+
 /* -------------------------------------------------------------- quiz */
 
 function shuffle(arr) {
@@ -230,6 +243,7 @@ function renderQuestion() {
   $("quiz-counter").textContent = `${quiz.idx + 1}/${quiz.list.length}`;
   $("review-badge").classList.toggle("hidden", !q.needs_review);
   $("q-text").textContent = q.question;
+  renderMath($("q-text"));
 
   const isMulti = q.correct.size > 1;
   $("multi-hint").classList.toggle("hidden", !isMulti);
@@ -245,6 +259,7 @@ function renderQuestion() {
     btn.textContent = text;
     btn.addEventListener("click", () => onOptionClick(i, btn, isMulti));
     box.appendChild(btn);
+    renderMath(btn);
   });
 }
 

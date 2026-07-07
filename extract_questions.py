@@ -58,6 +58,19 @@ Extract EVERY question visible in the provided material. For each question:
 - "needs_review": true if the text is hard to read, options look cut off or
   incomplete, or the correct-answer marking is ambiguous
 
+Mathematical and visual content:
+- Transcribe ALL mathematical notation (formulas, equations, inequalities,
+  fractions, powers, roots, angles) as LaTeX inside $...$ delimiters,
+  e.g. $6x - 3 = x + 57$, $\frac{\angle QOR}{\angle ROS} = ?$. This applies to
+  question text and answer options alike.
+- If data is presented in a table, transcribe the table into the question text:
+  cells separated by " | ", one row per line.
+- If the question relies on a figure, diagram or graph, append a concise
+  description of it to the question text in square brackets, in the question's
+  language (e.g. [Сурет: түзудегі $3x$, $5x$, $x$ бұрыштары] /
+  [Рисунок: углы $3x$, $5x$, $x$ на прямой $PS$]). Include every label and
+  value from the figure, so the question can be solved without seeing it.
+
 If the material contains no questions, return an empty "questions" list.\
 """
 
