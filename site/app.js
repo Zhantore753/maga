@@ -213,6 +213,7 @@ function prepared(q) {
     id: q.id,
     question: q.question,
     needs_review: q.needs_review,
+    audio: q.audio || [],
     options: order.map(i => q.options[i]),
     correct: new Set(
       q.correct_answer_indices.map(ci => order.indexOf(ci))),
@@ -242,6 +243,16 @@ function renderQuestion() {
   $("progress-bar").style.width = `${(quiz.idx / quiz.list.length) * 100}%`;
   $("quiz-counter").textContent = `${quiz.idx + 1}/${quiz.list.length}`;
   $("review-badge").classList.toggle("hidden", !q.needs_review);
+  const audioBox = $("q-audio");
+  audioBox.innerHTML = "";
+  audioBox.classList.toggle("hidden", q.audio.length === 0);
+  q.audio.forEach(src => {
+    const player = document.createElement("audio");
+    player.controls = true;
+    player.preload = "none";
+    player.src = src;
+    audioBox.appendChild(player);
+  });
   $("q-text").textContent = q.question;
   renderMath($("q-text"));
 

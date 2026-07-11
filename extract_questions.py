@@ -55,6 +55,15 @@ Extract EVERY question visible in the provided material. For each question:
   color. Some questions have several correct answers: include every marked index.
   If nothing marks any correct answer, use an empty list. Never guess.
 - "topic": the subject/topic if stated in the material, otherwise null
+- "number": the question's printed number in the material (e.g. "17." -> 17),
+  otherwise null
+- "variant": if the material is organized into numbered variants/tests
+  (e.g. "5 НҰСҚА", "ВАРИАНТ 12", "Test 3"), the number of the variant/test this
+  question belongs to; otherwise null. Watch for variant headers — questions
+  after a header belong to that variant until the next header.
+- "listening_text": if the question belongs to a listening text / audio
+  (e.g. a section headed "TEXT 1", "Text 2", "Listening"), the number of that
+  text (1 or 2); otherwise null
 - "needs_review": true if the text is hard to read, options look cut off or
   incomplete, or the correct-answer marking is ambiguous
 
@@ -91,6 +100,11 @@ OUTPUT_SCHEMA = {
                         "items": {"type": "integer"},
                     },
                     "topic": {"anyOf": [{"type": "string"}, {"type": "null"}]},
+                    "number": {"anyOf": [{"type": "integer"}, {"type": "null"}]},
+                    "variant": {"anyOf": [{"type": "integer"}, {"type": "null"}]},
+                    "listening_text": {
+                        "anyOf": [{"type": "integer"}, {"type": "null"}]
+                    },
                     "needs_review": {"type": "boolean"},
                 },
                 "required": [
@@ -98,6 +112,9 @@ OUTPUT_SCHEMA = {
                     "options",
                     "correct_answer_indices",
                     "topic",
+                    "number",
+                    "variant",
+                    "listening_text",
                     "needs_review",
                 ],
                 "additionalProperties": False,

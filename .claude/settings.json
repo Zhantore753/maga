@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(python extract_questions.py *)",
+      "PowerShell(python solve_answers.py *)",
+      "PowerShell(python dedup.py *)",
+      "PowerShell(Get-ChildItem *)",
+      "PowerShell(Get-Content *)",
+      "PowerShell(Get-Process *)",
+      "Bash(python extract_questions.py *)",
+      "Bash(python solve_answers.py *)",
+      "Bash(python dedup.py *)"
+    ]
+  }
+}

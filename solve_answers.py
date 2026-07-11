@@ -144,6 +144,9 @@ def main() -> int:
                     # extraction flags unmarked questions; a confident solve
                     # resolves that doubt
                     q["needs_review"] = False
+                if q.get("audio"):
+                    # listening questions can't be verified from text alone
+                    q["needs_review"] = True
                 solved += 1
                 continue
         q["answer_source"] = "none"

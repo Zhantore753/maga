@@ -22,5 +22,13 @@
       "kz": "Математика"
     },
     "file": "math.json"
+  },
+  {
+    "id": "english",
+    "title": {
+      "ru": "Английский язык",
+      "kz": "Ағылшын тілі"
+    },
+    "file": "english.json"
   }
 ]

@@ -93,22 +93,26 @@ def main() -> int:
         questions.extend(data)
         print(f"{path}: {len(data)} questions")
 
-    # Pass 1: group by exact normalized question text
-    exact: dict[str, list[dict]] = {}
+    # Pass 1: group by (attached audio, exact normalized question text).
+    # Questions tied to different recordings never merge, even if the text
+    # is identical ("What is the main idea of the text?").
+    exact: dict[tuple, list[dict]] = {}
     for q in questions:
-        exact.setdefault(normalize(q["question"]), []).append(q)
+        key = (",".join(q.get("audio", [])), normalize(q["question"]))
+        exact.setdefault(key, []).append(q)
 
     # Pass 2: fuzzy-merge groups whose question text is nearly identical
     keys = sorted(exact)
-    merged_into: dict[str, str] = {}
+    merged_into: dict[tuple, tuple] = {}
     for i, key in enumerate(keys):
         if key in merged_into:
             continue
-        matcher = difflib.SequenceMatcher(a=key)
+        matcher = difflib.SequenceMatcher(a=key[1])
         for other in keys[i + 1:]:
-            if other in merged_into or abs(len(other) - len(key)) > 20:
+            if (other in merged_into or other[0] != key[0]
+                    or abs(len(other[1]) - len(key[1])) > 20):
                 continue
-            matcher.set_seq2(other)
+            matcher.set_seq2(other[1])
             if (matcher.quick_ratio() >= FUZZY_THRESHOLD
                     and matcher.ratio() >= FUZZY_THRESHOLD):
                 exact[key].extend(exact[other])

@@ -179,6 +179,9 @@ main {
   margin-bottom: 8px;
 }
 
+#q-audio { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+#q-audio audio { width: 100%; }
+
 #q-text { font-size: 1.15rem; margin-bottom: 16px; }
 #multi-hint { margin-bottom: 12px; }
 
