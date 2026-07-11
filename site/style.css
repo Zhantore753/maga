@@ -183,6 +183,15 @@ main {
 #q-audio audio { width: 100%; }
 
 #q-text { font-size: 1.15rem; margin-bottom: 16px; }
+
+#q-figure { margin-bottom: 16px; }
+#q-figure summary { cursor: pointer; color: var(--accent); font-weight: 600; }
+#q-figure img {
+  max-width: 100%;
+  margin-top: 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
 #multi-hint { margin-bottom: 12px; }
 
 #options { display: flex; flex-direction: column; gap: 10px; }

@@ -28,6 +28,7 @@ const STR = {
     needsReview: "⚠ вопрос может содержать ошибку",
     multiHint: "Выберите все правильные варианты",
     noQuestions: "Нет вопросов для выбранных настроек",
+    showFigure: "Показать рисунок",
   },
   kz: {
     appTitle: "КТ Жаттықтырғыш",
@@ -51,6 +52,7 @@ const STR = {
     needsReview: "⚠ сұрақта қате болуы мүмкін",
     multiHint: "Барлық дұрыс нұсқаларды таңдаңыз",
     noQuestions: "Таңдалған баптаулар үшін сұрақ жоқ",
+    showFigure: "Суретті көрсету",
   },
 };
 
@@ -220,6 +222,7 @@ function prepared(q) {
     question: useRu ? q.question_ru : q.question,
     needs_review: q.needs_review,
     audio: q.audio || [],
+    image: q.image || null,
     options: order.map(i => options[i]),
     correct: new Set(
       q.correct_answer_indices.map(ci => order.indexOf(ci))),
@@ -261,6 +264,11 @@ function renderQuestion() {
   });
   $("q-text").textContent = q.question;
   renderMath($("q-text"));
+
+  const figure = $("q-figure");
+  figure.classList.toggle("hidden", !q.image);
+  figure.open = false;
+  $("q-figure-img").src = q.image || "";
 
   const isMulti = q.correct.size > 1;
   $("multi-hint").classList.toggle("hidden", !isMulti);
