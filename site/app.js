@@ -179,8 +179,11 @@ function renderSetup() {
 }
 
 function filteredQuestions() {
-  return state.questions.filter(
-    q => state.setup.qlang === "all" || q._lang === state.setup.qlang);
+  // a Kazakh question with a Russian translation counts for the RU filter too
+  return state.questions.filter(q =>
+    state.setup.qlang === "all" ||
+    q._lang === state.setup.qlang ||
+    (state.setup.qlang === "ru" && q.question_ru));
 }
 
 /* Render $...$ LaTeX inside an element (math topics). No-op until KaTeX loads. */
@@ -206,15 +209,18 @@ function shuffle(arr) {
   return arr;
 }
 
-/* Shuffle options of a question, remapping correct indices. */
+/* Shuffle options of a question, remapping correct indices. Questions with a
+ * Russian translation display it when the RU question-language is chosen. */
 function prepared(q) {
-  const order = shuffle(q.options.map((_, i) => i));
+  const useRu = state.setup.qlang === "ru" && q.question_ru;
+  const options = useRu ? q.options_ru : q.options;
+  const order = shuffle(options.map((_, i) => i));
   return {
     id: q.id,
-    question: q.question,
+    question: useRu ? q.question_ru : q.question,
     needs_review: q.needs_review,
     audio: q.audio || [],
-    options: order.map(i => q.options[i]),
+    options: order.map(i => options[i]),
     correct: new Set(
       q.correct_answer_indices.map(ci => order.indexOf(ci))),
   };
