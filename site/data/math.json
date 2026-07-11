@@ -4054,16 +4054,15 @@
       "$A = 5B$"
     ],
     "correct_answer_indices": [
-      2
+      1
     ],
     "topic": null,
-    "needs_review": true,
+    "needs_review": false,
     "id": 145,
     "source_file": "Screenshot (691).png",
     "duplicate_count": 0,
-    "answer_source": "ai",
-    "ai_confidence": "high",
-    "question_ru": "Сравните столбцы А и В.\n\nСтолбец А | Столбец В\nКоличество делителей числа 18 | Количество кратных числа 18, не превышающих 150\n\nВарианты ответа:",
+    "answer_source": "manual",
+    "question_ru": "Сравните столбцы А и В.\n\nСтолбец А | Столбец В\nКоличество делителей числа 18 | Количество кратных числа 18, не превышающих 150",
     "options_ru": [
       "$A > B$",
       "$A < B$",

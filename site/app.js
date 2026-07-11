@@ -250,7 +250,8 @@ function renderQuestion() {
   quiz.answered = false;
 
   $("progress-bar").style.width = `${(quiz.idx / quiz.list.length) * 100}%`;
-  $("quiz-counter").textContent = `${quiz.idx + 1}/${quiz.list.length}`;
+  $("quiz-counter").textContent =
+    `${quiz.idx + 1}/${quiz.list.length} · id ${q.id}`;
   $("review-badge").classList.toggle("hidden", !q.needs_review);
   const audioBox = $("q-audio");
   audioBox.innerHTML = "";
