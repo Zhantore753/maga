@@ -97,15 +97,19 @@ function questionLang(q) {
   return KZ_LETTERS.test(q.question) ? "kz" : "ru";
 }
 
+/* Cache-buster: browsers otherwise keep serving stale question data after
+ * updates are deployed. */
+const DATA_VERSION = Date.now();
+
 async function loadTopics() {
-  const res = await fetch("data/topics.json");
+  const res = await fetch(`data/topics.json?v=${DATA_VERSION}`);
   state.topics = await res.json();
   renderTopics();
 }
 
 async function openTopic(topic) {
   state.topic = topic;
-  const res = await fetch(`data/${topic.file}`);
+  const res = await fetch(`data/${topic.file}?v=${DATA_VERSION}`);
   const all = await res.json();
   state.questions = all.filter(
     q => q.correct_answer_indices?.length && q.options?.length >= 2
