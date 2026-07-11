@@ -39,6 +39,8 @@ def main() -> int:
     ap.add_argument("questions_file", type=Path)
     ap.add_argument("images_dir", type=Path)
     ap.add_argument("--topic", required=True)
+    ap.add_argument("--all", action="store_true",
+                    help="attach to every question, not only figure-marked ones")
     args = ap.parse_args()
 
     questions = json.loads(args.questions_file.read_text(encoding="utf-8"))
@@ -47,7 +49,9 @@ def main() -> int:
 
     for q in questions:
         text = (q.get("question") or "") + (q.get("question_ru") or "")
-        if not FIGURE_MARKER.search(text):
+        if not args.all and not FIGURE_MARKER.search(text):
+            continue
+        if q.get("image"):
             continue
         if q.get("answer_source") == "marked":
             skipped_marked += 1  # screenshot would reveal the correct answer
