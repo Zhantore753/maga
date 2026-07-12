@@ -31,16 +31,20 @@
       "inner join"
     ],
     "correct_answer_indices": [
-      2,
       5
     ],
     "topic": "Базы данных",
-    "needs_review": false,
+    "needs_review": true,
     "id": 2,
     "source_file": "11.jpg",
     "duplicate_count": 0,
-    "answer_source": "marked",
-    "image": "img/database/q2.jpg"
+    "answer_source": "ai",
+    "image": "img/database/q2.jpg",
+    "previous_answer_indices": [
+      2,
+      5
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Цели управления параллельным выполнением в распределенной среде",
@@ -57,7 +61,7 @@
       3
     ],
     "topic": "Базы данных",
-    "needs_review": false,
+    "needs_review": true,
     "id": 3,
     "source_file": "12.jpg",
     "duplicate_count": 0,
@@ -111,8 +115,11 @@
     "source_file": "15.jpg",
     "duplicate_count": 0,
     "answer_source": "ai",
-    "ai_confidence": "medium",
-    "image": "img/database/q5.jpg"
+    "ai_confidence": "high",
+    "image": "img/database/q5.jpg",
+    "previous_answer_indices": [
+      0
+    ]
   },
   {
     "question": "Оператор DESCRIBE",
@@ -158,7 +165,7 @@
       6
     ],
     "topic": "Базы данных",
-    "needs_review": false,
+    "needs_review": true,
     "id": 7,
     "source_file": "2.jpg",
     "duplicate_count": 2,
@@ -185,7 +192,7 @@
       5
     ],
     "topic": "Базы данных",
-    "needs_review": true,
+    "needs_review": false,
     "id": 8,
     "source_file": "5.jpg",
     "duplicate_count": 2,
@@ -209,18 +216,24 @@
       "select * from table where instr(column1,'a')=1 or instr(column1,'e')=1"
     ],
     "correct_answer_indices": [
-      1
+      0,
+      4,
+      5
     ],
     "topic": "Базы данных",
-    "needs_review": false,
+    "needs_review": true,
     "id": 9,
     "source_file": "7.jpg",
     "duplicate_count": 1,
     "duplicate_sources": [
       "Тест (7).jpg"
     ],
-    "answer_source": "marked",
-    "image": "img/database/q9.jpg"
+    "answer_source": "ai",
+    "image": "img/database/q9.jpg",
+    "previous_answer_indices": [
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Сағаттар саны 60-тан көп және 1-семестрдегі сабақтар саны",
@@ -264,15 +277,14 @@
       "CHECK"
     ],
     "correct_answer_indices": [
-      3,
-      6
+      3
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 11,
     "source_file": "Bazy-dannykh_kaz.pdf",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Способ упорядочивания данных в индексе",
     "options_ru": [
       "CASCADE",
@@ -283,7 +295,12 @@
       "SORT",
       "ORDER BY",
       "CHECK"
-    ]
+    ],
+    "previous_answer_indices": [
+      3,
+      6
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "ALTER TABLE командасының негізгі қызметі",
@@ -296,16 +313,14 @@
       "сыртқы кілтті қосу/жою"
     ],
     "correct_answer_indices": [
-      1,
-      3,
-      5
+      3
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 12,
     "source_file": "Bazy-dannykh_kaz.pdf",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Основная функция команды ALTER TABLE",
     "options_ru": [
       "добавление/удаление первичного ключа",
@@ -314,7 +329,13 @@
       "изменение структуры таблицы",
       "связывание таблиц",
       "добавление/удаление внешнего ключа"
-    ]
+    ],
+    "previous_answer_indices": [
+      1,
+      3,
+      5
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Бөлім номері 5 болатын барлық жұмыскерлерді жою",
@@ -387,14 +408,14 @@
       "divide by"
     ],
     "correct_answer_indices": [
-      0
+      3
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 15,
     "source_file": "Bazy-dannykh_kaz.pdf",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Команда, используемая для операции объединения",
     "options_ru": [
       "join",
@@ -405,7 +426,11 @@
       "intersect",
       "times",
       "divide by"
-    ]
+    ],
+    "previous_answer_indices": [
+      0
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Әр Должность бағанында жұмысшы санын анықтайтын сұраныс",
@@ -422,7 +447,7 @@
       4
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 16,
     "source_file": "Bazy-dannykh_kaz.pdf",
     "duplicate_count": 0,
@@ -509,7 +534,7 @@
       7
     ],
     "topic": "SQL",
-    "needs_review": false,
+    "needs_review": true,
     "id": 19,
     "source_file": "Database (1) part1.pdf",
     "duplicate_count": 6,
@@ -537,7 +562,7 @@
       2
     ],
     "topic": "SQL",
-    "needs_review": false,
+    "needs_review": true,
     "id": 20,
     "source_file": "Database (1) part1.pdf",
     "duplicate_count": 5,
@@ -630,7 +655,7 @@
       5
     ],
     "topic": "SQL",
-    "needs_review": false,
+    "needs_review": true,
     "id": 23,
     "source_file": "Database (1) part1.pdf",
     "duplicate_count": 6,
@@ -796,7 +821,7 @@
       6
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 28,
     "source_file": "Database (1) part1.pdf",
     "duplicate_count": 6,
@@ -824,7 +849,6 @@
       "1:3"
     ],
     "correct_answer_indices": [
-      1,
       4
     ],
     "topic": "Базы данных",
@@ -837,8 +861,13 @@
       "Database (21).png",
       "Database (61).png"
     ],
-    "answer_source": "marked",
-    "image": "img/database/q29.jpg"
+    "answer_source": "ai",
+    "image": "img/database/q29.jpg",
+    "previous_answer_indices": [
+      1,
+      4
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Действие команды alter\nalter table cast add x int",
@@ -906,7 +935,7 @@
       5
     ],
     "topic": "Базы данных",
-    "needs_review": false,
+    "needs_review": true,
     "id": 32,
     "source_file": "Database (1) part2.pdf",
     "duplicate_count": 2,
@@ -1074,7 +1103,6 @@
       "select from* table emp"
     ],
     "correct_answer_indices": [
-      1,
       5
     ],
     "topic": "Дereкkor базасы",
@@ -1087,8 +1115,13 @@
       "Database (96).png",
       "Тест (34).png"
     ],
-    "answer_source": "marked",
-    "image": "img/database/q38.jpg"
+    "answer_source": "ai",
+    "image": "img/database/q38.jpg",
+    "previous_answer_indices": [
+      1,
+      5
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "В таблице данных студентов добавьте в ячейку с номером пять 25 баллов на языке SQL",
@@ -1103,7 +1136,7 @@
       4
     ],
     "topic": "Базы данных",
-    "needs_review": true,
+    "needs_review": false,
     "id": 39,
     "source_file": "Database (1).png",
     "duplicate_count": 6,
@@ -1157,11 +1190,10 @@
       "select number, name, dept_number from emp where dept_number =15 or dept_number =17 or dept_number = 19)"
     ],
     "correct_answer_indices": [
-      0,
-      5
+      0
     ],
     "topic": "Базы данных",
-    "needs_review": false,
+    "needs_review": true,
     "id": 41,
     "source_file": "Database (102).png",
     "duplicate_count": 6,
@@ -1173,8 +1205,13 @@
       "Database (2).png",
       "База данных. docx(1).pdf"
     ],
-    "answer_source": "marked",
-    "image": "img/database/q41.jpg"
+    "answer_source": "ai",
+    "image": "img/database/q41.jpg",
+    "previous_answer_indices": [
+      0,
+      5
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "create table calc (x int, y int); insert into calc values (5, 45); select * from calc x, y, x+y;",
@@ -1221,7 +1258,7 @@
       6
     ],
     "topic": "Базы данных",
-    "needs_review": true,
+    "needs_review": false,
     "id": 43,
     "source_file": "Database (110).png",
     "duplicate_count": 1,
@@ -1303,7 +1340,7 @@
       3
     ],
     "topic": "Базы данных",
-    "needs_review": false,
+    "needs_review": true,
     "id": 46,
     "source_file": "Database (129).png",
     "duplicate_count": 8,
@@ -1361,7 +1398,7 @@
       5
     ],
     "topic": "Базы данных",
-    "needs_review": false,
+    "needs_review": true,
     "id": 48,
     "source_file": "Database (168).png",
     "duplicate_count": 3,
@@ -1464,7 +1501,7 @@
       3
     ],
     "topic": "Базы данных",
-    "needs_review": false,
+    "needs_review": true,
     "id": 52,
     "source_file": "Database (173).png",
     "duplicate_count": 3,
@@ -1720,7 +1757,7 @@
       5
     ],
     "topic": "Базы данных",
-    "needs_review": false,
+    "needs_review": true,
     "id": 61,
     "source_file": "Database (181).png",
     "duplicate_count": 4,
@@ -1751,7 +1788,7 @@
       4
     ],
     "topic": "Базы данных",
-    "needs_review": false,
+    "needs_review": true,
     "id": 62,
     "source_file": "Database (184).png",
     "duplicate_count": 0,
@@ -1773,7 +1810,7 @@
       6
     ],
     "topic": "Базы данных",
-    "needs_review": true,
+    "needs_review": false,
     "id": 63,
     "source_file": "Database (186).png",
     "duplicate_count": 2,
@@ -1887,7 +1924,7 @@
       2
     ],
     "topic": "Базы данных",
-    "needs_review": false,
+    "needs_review": true,
     "id": 67,
     "source_file": "Database (39).png",
     "duplicate_count": 0,
@@ -1907,8 +1944,7 @@
       "3:1"
     ],
     "correct_answer_indices": [
-      5,
-      6
+      5
     ],
     "topic": "Пан: Дереккор базасы",
     "needs_review": true,
@@ -1921,8 +1957,13 @@
       "Database (81).png",
       "Тест (39).png"
     ],
-    "answer_source": "marked",
-    "image": "img/database/q68.jpg"
+    "answer_source": "ai",
+    "image": "img/database/q68.jpg",
+    "previous_answer_indices": [
+      5,
+      6
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Действие выполняемое следующей функцией sum (sales)",
@@ -2017,7 +2058,7 @@
       "выполнение запросов"
     ],
     "correct_answer_indices": [
-      0
+      5
     ],
     "topic": null,
     "needs_review": true,
@@ -2030,8 +2071,12 @@
       "Database (89).png",
       "Тест (27).png"
     ],
-    "answer_source": "marked",
-    "image": "img/database/q72.jpg"
+    "answer_source": "ai",
+    "image": "img/database/q72.jpg",
+    "previous_answer_indices": [
+      0
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Выражение, описывающее правило объединения",
@@ -2044,8 +2089,7 @@
       "if a→b and b→c, then a→c"
     ],
     "correct_answer_indices": [
-      2,
-      5
+      0
     ],
     "topic": "Пен: Дереккор базасы",
     "needs_review": true,
@@ -2058,8 +2102,13 @@
       "Database (90).png",
       "Тест (28).png"
     ],
-    "answer_source": "marked",
-    "image": "img/database/q73.jpg"
+    "answer_source": "ai",
+    "image": "img/database/q73.jpg",
+    "previous_answer_indices": [
+      2,
+      5
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Архитектура ANSI/SPARC содержит уровни",
@@ -2076,7 +2125,7 @@
     "correct_answer_indices": [
       1,
       3,
-      6
+      5
     ],
     "topic": null,
     "needs_review": true,
@@ -2089,8 +2138,14 @@
       "Database (91).png",
       "Тест (29).png"
     ],
-    "answer_source": "marked",
-    "image": "img/database/q74.jpg"
+    "answer_source": "ai",
+    "image": "img/database/q74.jpg",
+    "previous_answer_indices": [
+      1,
+      3,
+      6
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Для uporядочивания по алфавиту используется следующая команда",
@@ -2141,9 +2196,11 @@
       "внешний"
     ],
     "correct_answer_indices": [
+      0,
       1,
-      2,
-      7
+      4,
+      5,
+      6
     ],
     "topic": "Database Architecture",
     "needs_review": true,
@@ -2159,8 +2216,14 @@
       "Тест (26).png",
       "Тест (31).png"
     ],
-    "answer_source": "marked",
-    "image": "img/database/q76.jpg"
+    "answer_source": "ai",
+    "image": "img/database/q76.jpg",
+    "previous_answer_indices": [
+      1,
+      2,
+      7
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Результат выполнения следующей команды\ncreate table stud (x int, y int);\ninsert into stud values (10, 45);\ninsert into stud values (20, 70);\ninsert into stud values (30, 90);\ncreate table stud2 (x int, y int);\ninsert into stud2 values (10, 450);\ninsert into stud2 values (40, 900);\nSelect * from stud\njoin stud2\non stud.x= stud2.x",
@@ -2206,7 +2269,7 @@
       4
     ],
     "topic": "SQL",
-    "needs_review": true,
+    "needs_review": false,
     "id": 78,
     "source_file": "Database (55).png",
     "duplicate_count": 4,
@@ -2231,15 +2294,14 @@
       "select from* table emp"
     ],
     "correct_answer_indices": [
-      1,
       5
     ],
     "topic": "SQL",
-    "needs_review": false,
+    "needs_review": true,
     "id": 79,
     "source_file": "Database (56).png",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "image": "img/database/q79.jpg",
     "question_ru": "Так как все данные необходимо получить из приведённой ниже SQL-таблицы, где имеются столбцы id, name, city, salary",
     "options_ru": [
@@ -2250,7 +2312,12 @@
       "select * from table emp where salary > 1500",
       "select * from table emp",
       "select from* table emp"
-    ]
+    ],
+    "previous_answer_indices": [
+      1,
+      5
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Виды строчных данных в работе с БД",
@@ -2363,7 +2430,7 @@
       "только из моделей и данных"
     ],
     "correct_answer_indices": [
-      1
+      4
     ],
     "topic": "Базы данных",
     "needs_review": true,
@@ -2374,8 +2441,12 @@
       "1.jpg",
       "Тест (1).jpg"
     ],
-    "answer_source": "marked",
-    "image": "img/database/q83.jpg"
+    "answer_source": "ai",
+    "image": "img/database/q83.jpg",
+    "previous_answer_indices": [
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Темы работы разработчика логической базы данных",
@@ -2415,10 +2486,10 @@
       "степень отношения"
     ],
     "correct_answer_indices": [
-      1
+      5
     ],
     "topic": "Базы данных",
-    "needs_review": false,
+    "needs_review": true,
     "id": 85,
     "source_file": "photo_2023-07-21_10-29-24.jpg",
     "duplicate_count": 2,
@@ -2426,7 +2497,7 @@
       "4.jpg",
       "Тест (4).jpg"
     ],
-    "answer_source": "marked",
+    "answer_source": "ai",
     "image": "img/database/q85.jpg",
     "question_ru": "Количество атрибутов в таблице называется",
     "options_ru": [
@@ -2436,7 +2507,11 @@
       "сила отношения",
       "мощность отношения",
       "степень отношения"
-    ]
+    ],
+    "previous_answer_indices": [
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Запрос, который вычисляет сумму всех уникальных значений столбца в таблице",
@@ -2568,7 +2643,8 @@
       "клиент управляет пользовательской логикой приложения"
     ],
     "correct_answer_indices": [
-      2
+      2,
+      3
     ],
     "topic": "Базы данных",
     "needs_review": true,
@@ -2580,7 +2656,10 @@
     ],
     "answer_source": "ai",
     "ai_confidence": "medium",
-    "image": "img/database/q91.jpg"
+    "image": "img/database/q91.jpg",
+    "previous_answer_indices": [
+      2
+    ]
   },
   {
     "question": "Аномалии, которые возможны при денормализации",
@@ -2648,14 +2727,14 @@
       "510"
     ],
     "correct_answer_indices": [
-      3
+      2
     ],
     "topic": "Алгоритмдер және директер құрылымы",
-    "needs_review": false,
+    "needs_review": true,
     "id": 94,
     "source_file": "Алгоритмы+БД.docx (image11.png)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Предмет: Алгоритмы и структуры данных\n\nРезультат фрагмента программы\nint a=5;\nint b=0;\nint i=a;\nr=b++;\ncout << a;\ncout << r;\ncout << b;",
     "options_ru": [
       "000",
@@ -2663,7 +2742,11 @@
       "500",
       "510"
     ],
-    "image": "img/database/q94.jpg"
+    "image": "img/database/q94.jpg",
+    "previous_answer_indices": [
+      3
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Функционның ішінде ғана белгілі, сонын ішінде анықталатын айнымалы атауы",
@@ -2958,7 +3041,7 @@
       4
     ],
     "topic": "Алгоритмдер және директер құрылымы",
-    "needs_review": false,
+    "needs_review": true,
     "id": 105,
     "source_file": "Алгоритмы+БД.docx (image22.png)",
     "duplicate_count": 0,
@@ -3068,7 +3151,7 @@
       0
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 109,
     "source_file": "Алгоритмы+БД.docx (image26.png)",
     "duplicate_count": 0,
@@ -3124,7 +3207,7 @@
       0
     ],
     "topic": null,
-    "needs_review": true,
+    "needs_review": false,
     "id": 111,
     "source_file": "Алгоритмы+БД.docx (image28.png)",
     "duplicate_count": 0,
@@ -3180,7 +3263,7 @@
       0
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 113,
     "source_file": "Алгоритмы+БД.docx (image3.png)",
     "duplicate_count": 0,
@@ -3233,15 +3316,14 @@
       "бағыттатан және бағыттатмаған кабырғалары бар жалпылама граф тын түрі"
     ],
     "correct_answer_indices": [
-      1,
       3
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 115,
     "source_file": "Алгоритмы+БД.docx (image31.png)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Гиперграф",
     "options_ru": [
       "тип обобщённого графа, в котором вершины могут быть отдельными (инцидентными) без соединения рёбрами",
@@ -3250,7 +3332,12 @@
       "тип обобщённого графа, в котором каждым ребром соединяются не только две вершины, но и любое количество вершин",
       "тип обобщённого графа с направленными и ненаправленными рёбрами"
     ],
-    "image": "img/database/q115.jpg"
+    "image": "img/database/q115.jpg",
+    "previous_answer_indices": [
+      1,
+      3
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "G=(V, E) ерегеген берілген графты айналу ағысын мағынасы",
@@ -3297,7 +3384,7 @@
       6
     ],
     "topic": "Деректектар басы",
-    "needs_review": false,
+    "needs_review": true,
     "id": 117,
     "source_file": "Алгоритмы+БД.docx (image33.png)",
     "duplicate_count": 0,
@@ -3361,7 +3448,7 @@
       4
     ],
     "topic": "SQL",
-    "needs_review": false,
+    "needs_review": true,
     "id": 119,
     "source_file": "Алгоритмы+БД.docx (image35.png)",
     "duplicate_count": 0,
@@ -3573,7 +3660,7 @@
       4
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 127,
     "source_file": "Алгоритмы+БД.docx (image45.png)",
     "duplicate_count": 0,
@@ -3702,7 +3789,7 @@
       6
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 131,
     "source_file": "Алгоритмы+БД.docx (image49.png)",
     "duplicate_count": 0,
@@ -3764,7 +3851,7 @@
       5
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 133,
     "source_file": "Алгоритмы+БД.docx (image50.png)",
     "duplicate_count": 0,
@@ -3794,14 +3881,14 @@
       "Қазметтергердің балаларының тізмі;"
     ],
     "correct_answer_indices": [
-      1
+      2
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 134,
     "source_file": "Алгоритмы+БД.docx (image51.png)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "При выполнении SQL-запроса, показанного во вставке, выводится\nSELECT Қазметтер.Аты-жөні\nFROM Қазметтер\nWHERE Қазметтер.Қазметтер_коды<>ALL (SELECT Қазметтер_коды\nFROM Балалар);",
     "options_ru": [
       "Код сотрудников;",
@@ -3812,7 +3899,11 @@
       "Список детей;",
       "Список детей сотрудников;"
     ],
-    "image": "img/database/q134.jpg"
+    "image": "img/database/q134.jpg",
+    "previous_answer_indices": [
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "SQL-ің келесі операторларының орындалу реттіктесі\nSELECT ID, NAME, CITY, GROUP\nFROM STUDENT\nWHERE GROUP=1;",
@@ -3832,7 +3923,7 @@
       7
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 135,
     "source_file": "Алгоритмы+БД.docx (image52.png)",
     "duplicate_count": 0,
@@ -3900,7 +3991,7 @@
       4
     ],
     "topic": "Пан: Деректор базасы",
-    "needs_review": false,
+    "needs_review": true,
     "id": 137,
     "source_file": "Алгоритмы+БД.docx (image54.png)",
     "duplicate_count": 0,
@@ -4081,7 +4172,7 @@
       3
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 143,
     "source_file": "Алгоритмы+БД.docx (image9.png)",
     "duplicate_count": 0,
@@ -4142,22 +4233,26 @@
       "деректердің құрылымдық етілген жиыны"
     ],
     "correct_answer_indices": [
-      0,
-      1,
       2
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 146,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Какое основное значение передаёт понятие «база данных»?",
     "options_ru": [
       "база информационной системы",
       "совокупность данных, предназначенных для совместного использования",
       "структурированная совокупность данных"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      1,
+      2
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "«Деректер базасы» ұғымы қандай мағынаны береді?",
@@ -4166,20 +4261,24 @@
       "ортақ қолдануға арналған деректердің жиынтығы"
     ],
     "correct_answer_indices": [
-      0,
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 147,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Какое значение имеет понятие «база данных»?",
     "options_ru": [
       "база информационной системы",
       "совокупность данных, предназначенных для общего использования"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "«Деректер базасы» ұғымының анықтамасын беріңіз",
@@ -4189,22 +4288,26 @@
       "ақпараттық жүйенің базасы"
     ],
     "correct_answer_indices": [
-      0,
-      1,
-      2
+      0
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 148,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 4,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Дайте определение понятию «База данных»",
     "options_ru": [
       "структурированная совокупность данных",
       "совокупность данных, хранящихся в памяти дисков",
       "база информационной системы"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      1,
+      2
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "«Қатынас схемасы» ұғымы қандай мағынаны береді?",
@@ -4301,7 +4404,7 @@
       2
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 153,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -4393,7 +4496,7 @@
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 157,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -4411,20 +4514,24 @@
       "қатынас құру үшін"
     ],
     "correct_answer_indices": [
-      0,
-      1
+      0
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 158,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 1,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Для чего предназначен SQL-оператор CREATE TABLE?",
     "options_ru": [
       "для создания таблицы",
       "для создания отношения"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "DELETE SQL-операторы не үшін арналған?",
@@ -4459,7 +4566,7 @@
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 160,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -4518,20 +4625,24 @@
       "VED кестесі бойынша сынақ тапсырған студенттердің санын санайды"
     ],
     "correct_answer_indices": [
-      0,
-      1
+      0
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 163,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 1,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Оператор SELECT COUNT(DISTINCT Stud_id) FROM VED",
     "options_ru": [
       "подсчитывает количество неповторяющихся значений поля Stud_id",
       "подсчитывает количество студентов, сдавших зачёт, по таблице VED"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "SELECT Stud.kod, Group.kod, Stud.imia, Group.nazv FROM Stud, Group WHERE Stud.kod=Group.kod операторы",
@@ -4544,7 +4655,7 @@
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 164,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -4609,7 +4720,7 @@
       2
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 167,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 1,
@@ -4637,7 +4748,7 @@
       2
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 168,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -4660,7 +4771,7 @@
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 169,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -4678,20 +4789,24 @@
       "SELECT <барлық атрибуттардың тізімі>"
     ],
     "correct_answer_indices": [
-      0,
-      1
+      0
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 170,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "С помощью какого оператора SQL можно добавить в результирующую таблицу все атрибуты исходной таблицы?",
     "options_ru": [
       "SELECT *",
       "SELECT <список всех атрибутов>"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "SQL-өрнектерде WHERE операторы қандай мақсатта қолданылады?",
@@ -4704,7 +4819,7 @@
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 171,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 1,
@@ -4745,7 +4860,7 @@
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 173,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -4778,7 +4893,7 @@
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 175,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -4796,20 +4911,24 @@
       "Берілген шарт орындалатын жолдарды шығарады"
     ],
     "correct_answer_indices": [
-      0,
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 176,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Конструкция WHERE",
     "options_ru": [
       "Применяет условие",
       "Выводит строки, для которых выполняется заданное условие"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "А атрибутының әр мәніне В атрибутының бір мәні сәйкес келсе",
@@ -4882,7 +5001,7 @@
       2
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 180,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -4939,7 +5058,7 @@
       2
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 183,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -5019,7 +5138,7 @@
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 187,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 1,
@@ -5057,7 +5176,7 @@
       2
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 189,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -5082,7 +5201,7 @@
       2
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 190,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -5117,8 +5236,6 @@
       "деректер базасымен жұмыс істеуге арналған бағдарлама"
     ],
     "correct_answer_indices": [
-      0,
-      1,
       2
     ],
     "topic": null,
@@ -5129,13 +5246,19 @@
     "duplicate_sources": [
       "БД (1).docx (text 2/2)"
     ],
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Что такое система управления базами данных?",
     "options_ru": [
       "программное обеспечение",
       "система управления",
       "программа, предназначенная для работы с базой данных"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      1,
+      2
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Декарттық көбейту",
@@ -5175,7 +5298,7 @@
       2
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 194,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -5198,7 +5321,7 @@
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 195,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -5315,7 +5438,7 @@
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 201,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -5337,7 +5460,7 @@
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 202,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -5359,7 +5482,7 @@
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 203,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -5381,7 +5504,7 @@
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 204,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -5403,7 +5526,7 @@
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 205,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -5425,7 +5548,7 @@
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 206,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -5443,23 +5566,27 @@
       "деректер базасына қолданылатын банкіттік амалдар"
     ],
     "correct_answer_indices": [
-      0,
-      1
+      0
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 207,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 2,
     "duplicate_sources": [
       "БД (1).docx (text 2/2)"
     ],
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Что такое транзакция?",
     "options_ru": [
       "последовательность операций, применяемых к базе данных",
       "банковские операции, применяемые к базе данных"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Деректер базасы администраторының функциясы",
@@ -5474,7 +5601,7 @@
       2
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 208,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -5499,7 +5626,7 @@
       2
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 209,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -5524,7 +5651,7 @@
       2
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 210,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 1,
@@ -5672,7 +5799,7 @@
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 216,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -5694,7 +5821,7 @@
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 217,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -5737,7 +5864,7 @@
       2
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 219,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 1,
@@ -5800,7 +5927,7 @@
       2
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 222,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -5974,7 +6101,7 @@
       2
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 231,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -6016,7 +6143,7 @@
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 233,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -6081,7 +6208,7 @@
       2
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 236,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 1,
@@ -6104,7 +6231,7 @@
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 237,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -6151,7 +6278,7 @@
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 239,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -6175,7 +6302,7 @@
       2
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 240,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 1,
@@ -6198,7 +6325,7 @@
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 241,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -6372,7 +6499,7 @@
       2
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 250,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 1,
@@ -6397,7 +6524,7 @@
       2
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 251,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 0,
@@ -6504,7 +6631,7 @@
       2
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 256,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 2,
@@ -6565,7 +6692,7 @@
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 259,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 1,
@@ -6592,7 +6719,7 @@
       2
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 260,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 2,
@@ -6611,23 +6738,27 @@
       "тармақталған бұтақтардың терімінен"
     ],
     "correct_answer_indices": [
-      0,
-      1
+      0
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 261,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 1,
     "duplicate_sources": [
       "БД (1).docx (text 2/2)"
     ],
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Из чего состоит иерархическая модель данных?",
     "options_ru": [
       "из упорядоченного набора деревьев",
       "из набора разветвлённых ветвей"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Деректердің иерархиялық моделінің маңызы қанадй?",
@@ -6642,7 +6773,7 @@
       2
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 262,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 2,
@@ -6668,7 +6799,7 @@
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 263,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 1,
@@ -6689,23 +6820,27 @@
       "әр ұрпақтың тек бір атасы болады"
     ],
     "correct_answer_indices": [
-      0,
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 264,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 1,
     "duplicate_sources": [
       "БД (1).docx (text 2/2)"
     ],
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Каков основной принцип иерархической модели данных?",
     "options_ru": [
       "ни один потомок не может существовать без своего предка",
       "каждый потомок имеет только одного предка"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Тораптық модельдің иерархиялық модельден негізгі айырмашылығы қандай?",
@@ -6714,23 +6849,27 @@
       "әр ұрпақтың шектелмеген аталары болуы мүмкін"
     ],
     "correct_answer_indices": [
-      0,
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 265,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 1,
     "duplicate_sources": [
       "БД (1).docx (text 2/2)"
     ],
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "В чём основное отличие сетевой модели от иерархической модели?",
     "options_ru": [
       "неограниченность потомков",
       "каждый потомок может иметь неограниченное число предков"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Деректердің логикалық типі қандай мәндер қабылдай алады?",
@@ -6741,8 +6880,7 @@
     ],
     "correct_answer_indices": [
       0,
-      1,
-      2
+      1
     ],
     "topic": null,
     "needs_review": true,
@@ -6752,13 +6890,19 @@
     "duplicate_sources": [
       "БД (1).docx (text 2/2)"
     ],
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Какие значения может принимать логический тип данных?",
     "options_ru": [
       "истина",
       "ложь",
       "0 и 1"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      1,
+      2
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Деректердің логикалық типі қандай мәндер қабылдауы мүмкін?",
@@ -6793,7 +6937,7 @@
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 268,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 2,
@@ -6818,7 +6962,7 @@
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 269,
     "source_file": "БД (1).docx (text 1/2)",
     "duplicate_count": 1,
@@ -6865,7 +7009,7 @@
       1
     ],
     "topic": "Деректердің модельдері",
-    "needs_review": false,
+    "needs_review": true,
     "id": 271,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -7025,20 +7169,24 @@
       "кесте"
     ],
     "correct_answer_indices": [
-      0,
-      1
+      0
     ],
     "topic": "Реляциялық модель",
-    "needs_review": false,
+    "needs_review": true,
     "id": 279,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "На чём основана реляционная модель данных?",
     "options_ru": [
       "отношение",
       "таблица"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Деректердің реляциялық моделінде байланыстардың қандай түрлері қолданылады?",
@@ -7123,7 +7271,7 @@
       1
     ],
     "topic": "Тораптық модель",
-    "needs_review": false,
+    "needs_review": true,
     "id": 283,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -7141,20 +7289,24 @@
       "атрибуттардың барлық кортеждерінің қосындысынан тұратын қатынас"
     ],
     "correct_answer_indices": [
-      0,
-      1
+      0
     ],
     "topic": "Реляциялық амалдар",
     "needs_review": true,
     "id": 284,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 1,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Что является результатом операции объединения двух отношений?",
     "options_ru": [
       "отношение, состоящее из всех элементов исходных отношений",
       "отношение, состоящее из суммы всех кортежей атрибутов"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Екі қатынасты біріктіру операторын таңдаңыз:",
@@ -7186,7 +7338,7 @@
       1
     ],
     "topic": "Реляциялық амалдар",
-    "needs_review": false,
+    "needs_review": true,
     "id": 286,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -7210,7 +7362,7 @@
       2
     ],
     "topic": "Реляциялық амалдар",
-    "needs_review": false,
+    "needs_review": true,
     "id": 287,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -7235,7 +7387,7 @@
       2
     ],
     "topic": "Реляциялық амалдар",
-    "needs_review": false,
+    "needs_review": true,
     "id": 288,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -7254,20 +7406,24 @@
       "екі қатынасқа да қайталанатын кортеждер"
     ],
     "correct_answer_indices": [
-      0,
-      1
+      0
     ],
     "topic": "Реляциялық амалдар",
     "needs_review": true,
     "id": 289,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 1,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Что является результатом операции пересечения двух отношений?",
     "options_ru": [
       "кортежи, входящие в оба отношения",
       "кортежи, повторяющиеся в обоих отношениях"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Екінші индекс:",
@@ -7282,7 +7438,7 @@
       2
     ],
     "topic": "Индекс",
-    "needs_review": false,
+    "needs_review": true,
     "id": 290,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -7307,7 +7463,7 @@
       2
     ],
     "topic": "Желілік деректер базасы",
-    "needs_review": false,
+    "needs_review": true,
     "id": 291,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -7332,7 +7488,7 @@
       2
     ],
     "topic": "Иерархиялық деректер базасы",
-    "needs_review": false,
+    "needs_review": true,
     "id": 292,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 1,
@@ -7360,7 +7516,7 @@
       2
     ],
     "topic": "Иерархиялық деректер базасы",
-    "needs_review": false,
+    "needs_review": true,
     "id": 293,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 1,
@@ -7386,7 +7542,7 @@
       1
     ],
     "topic": "Иерархиялық модель",
-    "needs_review": false,
+    "needs_review": true,
     "id": 294,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -7543,20 +7699,24 @@
       "Сілтемелік бүтіндікпен байланысты"
     ],
     "correct_answer_indices": [
-      0,
-      1
+      0
     ],
     "topic": "Сілтемелік бүтіндік",
-    "needs_review": false,
+    "needs_review": true,
     "id": 302,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "При каскадном удалении:",
     "options_ru": [
       "Записи в подчинённой таблице также удаляются",
       "Связано со ссылочной целостностью"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Келесі объекттер арасында 1:1 байланысын орнатуға болады:",
@@ -7569,7 +7729,7 @@
       1
     ],
     "topic": "Байланыстар",
-    "needs_review": false,
+    "needs_review": true,
     "id": 303,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 1,
@@ -7591,7 +7751,7 @@
       1
     ],
     "topic": "Кесте және қатынас",
-    "needs_review": false,
+    "needs_review": true,
     "id": 304,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -7615,7 +7775,7 @@
       2
     ],
     "topic": "Клиент-сервер архитектурасы",
-    "needs_review": false,
+    "needs_review": true,
     "id": 305,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -7640,7 +7800,7 @@
       2
     ],
     "topic": "Клиент-сервер архитектурасы",
-    "needs_review": false,
+    "needs_review": true,
     "id": 306,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -7660,22 +7820,26 @@
       "«Болмыс-атрибут-байланыс» формасын қолданумен байланысты"
     ],
     "correct_answer_indices": [
-      0,
-      1,
       2
     ],
     "topic": "Концептуалды жоба",
-    "needs_review": false,
+    "needs_review": true,
     "id": 307,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Способ создания концептуального проекта:",
     "options_ru": [
       "Связан с описанием данных в терминах реляционной модели",
       "Связан с описанием объектов в виде отношений, а свойств — в виде атрибутов",
       "Связан с использованием формы «сущность-атрибут-связь»"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      1,
+      2
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Қатынастар арасында «көпке бір» байланысы қашан орнатылады?",
@@ -7684,20 +7848,24 @@
       "негізгі кестенің бір жазбасына қосымша кестенің бір не бірнеше жазбалары сәйкес келсе"
     ],
     "correct_answer_indices": [
-      0,
-      1
+      0
     ],
     "topic": "Байланыстар",
-    "needs_review": false,
+    "needs_review": true,
     "id": 308,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Когда между отношениями устанавливается связь «многие к одному»?",
     "options_ru": [
       "если одной записи основной таблицы соответствует несколько записей дополнительной таблицы",
       "если одной записи основной таблицы соответствует одна или несколько записей дополнительной таблицы"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Қатынастарға біріктіру амалын қолдану үшін қандай шарт орындалуы керек?",
@@ -7712,7 +7880,7 @@
       2
     ],
     "topic": "Реляциялық амалдар",
-    "needs_review": false,
+    "needs_review": true,
     "id": 309,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 2,
@@ -7732,22 +7900,26 @@
       "кейбір деректерді таңдап, жаңа кесте құрады"
     ],
     "correct_answer_indices": [
-      0,
-      1,
-      2
+      0
     ],
     "topic": "Реляциялық амалдар",
-    "needs_review": false,
+    "needs_review": true,
     "id": 310,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 2,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Какое действие выполняет операция выборки, характерная для отношений?",
     "options_ru": [
       "выбирает из отношения кортежи, удовлетворяющие заданному логическому условию",
       "выбирает часть таблицы",
       "выбирает некоторые данные и создаёт новую таблицу"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      1,
+      2
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Қатынастарды алу амалының нәтижесі не болады?",
@@ -7839,7 +8011,7 @@
       1
     ],
     "topic": "Реляциялық деректер базасы",
-    "needs_review": false,
+    "needs_review": true,
     "id": 315,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -7883,7 +8055,7 @@
       1
     ],
     "topic": "SQL сұраныстар",
-    "needs_review": false,
+    "needs_review": true,
     "id": 317,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -7905,7 +8077,7 @@
       1
     ],
     "topic": "Қолданушылар",
-    "needs_review": false,
+    "needs_review": true,
     "id": 318,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -7971,7 +8143,7 @@
       1
     ],
     "topic": "Қосымша",
-    "needs_review": false,
+    "needs_review": true,
     "id": 321,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -8092,20 +8264,24 @@
       "маңыздың данасын сәйкестендіру үшін қолданылатын атрибут"
     ],
     "correct_answer_indices": [
-      0,
-      1
+      0
     ],
     "topic": "Маңыз кілті",
-    "needs_review": false,
+    "needs_review": true,
     "id": 327,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Что такое ключ сущности?",
     "options_ru": [
       "атрибут или набор атрибутов, используемый для идентификации экземпляра сущности",
       "атрибут, используемый для идентификации экземпляра сущности"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Модель қай уақытта реляциялық болып табылады?",
@@ -8120,7 +8296,7 @@
       2
     ],
     "topic": "Реляциялық модель",
-    "needs_review": false,
+    "needs_review": true,
     "id": 328,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -8145,7 +8321,7 @@
       2
     ],
     "topic": "Тораптық модель",
-    "needs_review": false,
+    "needs_review": true,
     "id": 329,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -8168,7 +8344,7 @@
       1
     ],
     "topic": "Объект",
-    "needs_review": false,
+    "needs_review": true,
     "id": 330,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -8215,7 +8391,7 @@
       1
     ],
     "topic": "Реляциялық деректер базасы",
-    "needs_review": false,
+    "needs_review": true,
     "id": 332,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -8237,7 +8413,7 @@
       1
     ],
     "topic": "Реляциялық деректер базасы",
-    "needs_review": false,
+    "needs_review": true,
     "id": 333,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 1,
@@ -8259,7 +8435,7 @@
       1
     ],
     "topic": "Реляциялық деректер базасы",
-    "needs_review": false,
+    "needs_review": true,
     "id": 334,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -8277,20 +8453,24 @@
       "қатынастар арасындағы байланыстарды ұйымдастыру құралы"
     ],
     "correct_answer_indices": [
-      0,
-      1
+      0
     ],
     "topic": "Реляциялық деректер базасы",
-    "needs_review": false,
+    "needs_review": true,
     "id": 335,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 3,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Что означает понятие «индекс» в реляционной базе данных?",
     "options_ru": [
       "средство ускорения операции поиска записей в таблице",
       "средство организации связей между отношениями"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Реляциялық деректер базасында баған не деп аталады?",
@@ -8322,7 +8502,7 @@
       1
     ],
     "topic": "Реляциялық деректер базасы",
-    "needs_review": false,
+    "needs_review": true,
     "id": 337,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -8359,20 +8539,24 @@
       "байланыстың индексімен"
     ],
     "correct_answer_indices": [
-      0,
-      1
+      0
     ],
     "topic": "Реляциялық деректер базасы",
-    "needs_review": false,
+    "needs_review": true,
     "id": 339,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 1,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "С помощью чего осуществляется связывание таблиц в реляционной базе данных?",
     "options_ru": [
       "с помощью ключа связи",
       "с помощью индекса связи"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Реляциялық деректер базасында кілттер қандай мақсатта қолданылады?",
@@ -8385,7 +8569,7 @@
       1
     ],
     "topic": "Реляциялық деректер базасы",
-    "needs_review": false,
+    "needs_review": true,
     "id": 340,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 1,
@@ -8422,20 +8606,24 @@
       "егер алғашқы кестенің бір жазбасына қосымша кестенің тек бір жазбасы сәйкес келсе"
     ],
     "correct_answer_indices": [
-      0,
       1
     ],
     "topic": "Реляциялық деректер базасы",
-    "needs_review": false,
+    "needs_review": true,
     "id": 342,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Когда устанавливается связь «один-к-одному» между отношениями реляционной базы данных?",
     "options_ru": [
       "если все поля главной и дополнительной таблиц являются ключевыми",
       "если одной записи главной таблицы соответствует только одна запись дополнительной таблицы"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Реляциялық деректер базасының қатынасы неден тұрады?",
@@ -8473,7 +8661,7 @@
       1
     ],
     "topic": "Реляциялық деректер базасы",
-    "needs_review": false,
+    "needs_review": true,
     "id": 344,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -8513,20 +8701,24 @@
       "кестедегі жазба"
     ],
     "correct_answer_indices": [
-      0,
-      1
+      0
     ],
     "topic": "Реляциялық деректер базасы",
-    "needs_review": false,
+    "needs_review": true,
     "id": 346,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 1,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Что такое кортеж?",
     "options_ru": [
       "строка таблицы",
       "запись в таблице"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Символдық деректер бейнелеу формасы бойынша қандай түрлерге бөлінеді?",
@@ -8541,7 +8733,7 @@
       2
     ],
     "topic": "Символдық деректер",
-    "needs_review": false,
+    "needs_review": true,
     "id": 347,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 1,
@@ -8563,20 +8755,24 @@
       "SELECT Stud_id, Stud_name, MIN (ocenka) FROM VED GROUP BY Stud_id"
     ],
     "correct_answer_indices": [
-      0,
-      1
+      0
     ],
     "topic": "SQL операторы",
-    "needs_review": false,
+    "needs_review": true,
     "id": 348,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Оператор, который выводит минимальную оценку в зависимости от номера студента:",
     "options_ru": [
       "SELECT Stud_id, MIN (ocenka) FROM VED GROUP BY Stud_id",
       "SELECT Stud_id, Stud_name, MIN (ocenka) FROM VED GROUP BY Stud_id"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Сұраныс дегеніміз не?",
@@ -8586,22 +8782,26 @@
       "логикалық өрнек негізінде құрылған нәтижелі кесте"
     ],
     "correct_answer_indices": [
-      0,
-      1,
-      2
+      0
     ],
     "topic": "Сұраныс",
-    "needs_review": false,
+    "needs_review": true,
     "id": 349,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 2,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Что такое запрос?",
     "options_ru": [
       "процесс обращения пользователя к базе данных с целью выборки данных",
       "часть исходной таблицы, созданная в результате выборки",
       "результирующая таблица, созданная на основе логического выражения"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      1,
+      2
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Сұраныстар құру тілін көрсетіңіз:",
@@ -8610,20 +8810,24 @@
       "Select Query Language"
     ],
     "correct_answer_indices": [
-      0,
-      1
+      0
     ],
     "topic": "SQL",
     "needs_review": true,
     "id": 350,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 1,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Укажите язык создания запросов:",
     "options_ru": [
       "SQL",
       "Select Query Language"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Сұраныстар тілі неге арналған?",
@@ -8636,7 +8840,7 @@
       1
     ],
     "topic": "SQL",
-    "needs_review": false,
+    "needs_review": true,
     "id": 351,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 1,
@@ -8683,7 +8887,7 @@
       1
     ],
     "topic": "SQL",
-    "needs_review": false,
+    "needs_review": true,
     "id": 353,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -8732,7 +8936,7 @@
       2
     ],
     "topic": "SQL",
-    "needs_review": false,
+    "needs_review": true,
     "id": 355,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -8755,7 +8959,7 @@
       1
     ],
     "topic": "SQL",
-    "needs_review": false,
+    "needs_review": true,
     "id": 356,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -8777,7 +8981,7 @@
       1
     ],
     "topic": "SQL",
-    "needs_review": false,
+    "needs_review": true,
     "id": 357,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -8795,20 +8999,24 @@
       "СЕТЬ"
     ],
     "correct_answer_indices": [
-      0,
-      1
+      0
     ],
     "topic": "Тораптық модель",
-    "needs_review": false,
+    "needs_review": true,
     "id": 358,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "СУБД, ориентированная на сетевую модель:",
     "options_ru": [
       "IDMS",
       "СЕТЬ"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Тораптық модельде:",
@@ -8821,7 +9029,7 @@
       1
     ],
     "topic": "Тораптық модель",
-    "needs_review": false,
+    "needs_review": true,
     "id": 359,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -8865,7 +9073,7 @@
       1
     ],
     "topic": "Деректер банкінің қолданушылары",
-    "needs_review": false,
+    "needs_review": true,
     "id": 361,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -8889,7 +9097,7 @@
       2
     ],
     "topic": "Деректер банкінің қолданушылары",
-    "needs_review": false,
+    "needs_review": true,
     "id": 362,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -8956,7 +9164,7 @@
       1
     ],
     "topic": "Қалыпты формалар",
-    "needs_review": false,
+    "needs_review": true,
     "id": 365,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -8999,20 +9207,24 @@
       "егер оның әр кілттік емес атрибуты транзитивті емес түрде алғашқы кілтке тәуелді болса"
     ],
     "correct_answer_indices": [
-      0,
-      1
+      0
     ],
     "topic": "Қалыпты формалар",
-    "needs_review": false,
+    "needs_review": true,
     "id": 367,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Дайте определение третьей нормальной формы (3НФ):",
     "options_ru": [
       "если отношение находится в 2НФ и каждый его неключевой атрибут нетранзитивно зависит от первичного ключа",
       "если каждый его неключевой атрибут нетранзитивно зависит от первичного ключа"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Физикалық жазбаның құрылымы:",
@@ -9027,7 +9239,7 @@
       2
     ],
     "topic": "Физикалық жазба",
-    "needs_review": false,
+    "needs_review": true,
     "id": 368,
     "source_file": "БД (1).docx (text 2/2)",
     "duplicate_count": 0,
@@ -9055,7 +9267,7 @@
       0
     ],
     "topic": null,
-    "needs_review": true,
+    "needs_review": false,
     "id": 369,
     "source_file": "БД (1).pdf",
     "duplicate_count": 0,
@@ -9120,8 +9332,8 @@
       "деректер"
     ],
     "correct_answer_indices": [
-      0,
-      1
+      1,
+      6
     ],
     "topic": null,
     "needs_review": true,
@@ -9140,6 +9352,10 @@
       "оператор",
       "уровень",
       "данные"
+    ],
+    "previous_answer_indices": [
+      0,
+      1
     ]
   },
   {
@@ -9308,7 +9524,7 @@
       0
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 377,
     "source_file": "БД (1).pdf",
     "duplicate_count": 1,
@@ -9339,14 +9555,14 @@
       "VIEW BD"
     ],
     "correct_answer_indices": [
-      3
+      1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 378,
     "source_file": "БД (1).pdf",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Команда языка SQL, обеспечивающая доступ к базе данных",
     "options_ru": [
       "DROP TABLE",
@@ -9357,7 +9573,11 @@
       "OPEN BD",
       "SET BD",
       "VIEW BD"
-    ]
+    ],
+    "previous_answer_indices": [
+      3
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Берілген талаптарға сәйкес мәліметтерді интерпретациялауды жүзеге асыратын құралдар:",
@@ -9416,7 +9636,7 @@
       2
     ],
     "topic": "Деректер модельдері. ДҚБ жіктелуі",
-    "needs_review": false,
+    "needs_review": true,
     "id": 381,
     "source_file": "БД (2).docx (text 1/3)",
     "duplicate_count": 0,
@@ -9575,7 +9795,7 @@
       0
     ],
     "topic": "Деректер модельдері. ДҚБ жіктелуі",
-    "needs_review": false,
+    "needs_review": true,
     "id": 388,
     "source_file": "БД (2).docx (text 1/3)",
     "duplicate_count": 0,
@@ -9661,7 +9881,7 @@
       "Көп өлшемді модель"
     ],
     "correct_answer_indices": [
-      1
+      2
     ],
     "topic": "Деректер модельдері. ДҚБ жіктелуі",
     "needs_review": true,
@@ -9675,6 +9895,9 @@
       "Реляционная модель",
       "Объектно-ориентированная модель",
       "Многомерная модель"
+    ],
+    "previous_answer_indices": [
+      1
     ]
   },
   {
@@ -10013,7 +10236,7 @@
       "атауларынан"
     ],
     "correct_answer_indices": [
-      0
+      2
     ],
     "topic": "Реляциялық деректер моделі, реляциялық алгебра",
     "needs_review": true,
@@ -10023,13 +10246,17 @@
     "duplicate_sources": [
       "БД (2).docx (text 3/3)"
     ],
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Отношение имеет имена, которые отличаются от ... других отношений.",
     "options_ru": [
       "значений",
       "символов",
       "имён"
-    ]
+    ],
+    "previous_answer_indices": [
+      0
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Барлық атрибуттардың мәні бөлінбейтін болып табылады. Бұл доменнің қарапайым деректер типінің мәндері ретіндегі анықтамасынан шығады, яғни домен мәндерінің арасында ... тұра алмайды.",
@@ -10085,20 +10312,24 @@
       "өрнек"
     ],
     "correct_answer_indices": [
-      2
+      0
     ],
     "topic": "Реляциялық деректер моделі, реляциялық алгебра",
-    "needs_review": false,
+    "needs_review": true,
     "id": 410,
     "source_file": "БД (2).docx (text 1/3)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Реляционная алгебра и механизмы реляционного ... похожи",
     "options_ru": [
       "исчисление",
       "структура",
       "выражение"
-    ]
+    ],
+    "previous_answer_indices": [
+      2
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Манипуляциялық бөлік реляциялық деректер қорымен жиынына қатынау реляциялық алгебра немесе оған ... реляциялық есептеулер арқылы іске асырылатынын тұжырымдайды",
@@ -10229,7 +10460,7 @@
       1
     ],
     "topic": "Реляциялық алгебра операциялары",
-    "needs_review": false,
+    "needs_review": true,
     "id": 416,
     "source_file": "БД (2).docx (text 1/3)",
     "duplicate_count": 1,
@@ -10511,7 +10742,7 @@
       1
     ],
     "topic": "Реляциялық алгебра операциялары",
-    "needs_review": false,
+    "needs_review": true,
     "id": 428,
     "source_file": "БД (2).docx (text 1/3)",
     "duplicate_count": 0,
@@ -10762,7 +10993,7 @@
       0
     ],
     "topic": "E / R деректер үлгісі",
-    "needs_review": false,
+    "needs_review": true,
     "id": 439,
     "source_file": "БД (2).docx (text 1/3)",
     "duplicate_count": 0,
@@ -10898,7 +11129,7 @@
       1
     ],
     "topic": "E / R деректер үлгісі",
-    "needs_review": false,
+    "needs_review": true,
     "id": 445,
     "source_file": "БД (2).docx (text 1/3)",
     "duplicate_count": 0,
@@ -10944,7 +11175,7 @@
       2
     ],
     "topic": "E / R деректер үлгісі",
-    "needs_review": false,
+    "needs_review": true,
     "id": 447,
     "source_file": "БД (2).docx (text 1/3)",
     "duplicate_count": 0,
@@ -10967,7 +11198,7 @@
       0
     ],
     "topic": "Функционалды тәуелділік ұғымы және әлеуетті кілттен бастапқы кілтті бөлу процесі",
-    "needs_review": false,
+    "needs_review": true,
     "id": 448,
     "source_file": "БД (2).docx (text 1/3)",
     "duplicate_count": 0,
@@ -11108,7 +11339,7 @@
       2
     ],
     "topic": "Функционалды тәуелділік ұғымы және әлеуетті кілттен бастапқы кілтті бөлу процесі",
-    "needs_review": false,
+    "needs_review": true,
     "id": 454,
     "source_file": "БД (2).docx (text 1/3)",
     "duplicate_count": 0,
@@ -11177,7 +11408,7 @@
       1
     ],
     "topic": "Функционалды тәуелділік ұғымы және әлеуетті кілттен бастапқы кілтті бөлу процесі",
-    "needs_review": false,
+    "needs_review": true,
     "id": 457,
     "source_file": "БД (2).docx (text 1/3)",
     "duplicate_count": 1,
@@ -11390,7 +11621,7 @@
       0
     ],
     "topic": "SQL агрегаттық функциялары",
-    "needs_review": true,
+    "needs_review": false,
     "id": 466,
     "source_file": "БД (2).docx (text 1/3)",
     "duplicate_count": 1,
@@ -11413,21 +11644,25 @@
       "Select * From Мектеп Where Жасы < 25"
     ],
     "correct_answer_indices": [
-      1,
-      2
+      1
     ],
     "topic": "SQL агрегаттық функциялары",
-    "needs_review": false,
+    "needs_review": true,
     "id": 467,
     "source_file": "БД (2).docx (text 1/3)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Выберите из таблицы имена работников младше 25 лет:",
     "options_ru": [
       "Select * From Мектеп Where Жасы > 25",
       "Select Аты, Жасы From Мектеп Where Жасы < 25",
       "Select * From Мектеп Where Жасы < 25"
-    ]
+    ],
+    "previous_answer_indices": [
+      1,
+      2
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "\"Select *, MIN(Жасы) From Мектеп\" нәтижесі:",
@@ -11691,21 +11926,25 @@
       "Select Аты, Қызметі From Мектеп Where Аты Like 'Айшат'"
     ],
     "correct_answer_indices": [
-      0,
-      2
+      0
     ],
     "topic": "ДБ деректерді фільтрлеу және іздеу",
-    "needs_review": false,
+    "needs_review": true,
     "id": 479,
     "source_file": "БД (2).docx (text 1/3)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Таблица Мектеп\nНайдите среди работников работника по имени «Айшат».",
     "options_ru": [
       "Select * From Мектеп Where Аты Like 'Айшат'",
       "Select * From Мектеп Where Тегі Like 'Айшат'",
       "Select Аты, Қызметі From Мектеп Where Аты Like 'Айшат'"
-    ]
+    ],
+    "previous_answer_indices": [
+      0,
+      2
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Таңдау бойынша фильрден басқа, фильтрлердің басқа екі түрін – кәдімгі фильтрді және ... фильтрді пайдалануға болады.",
@@ -11841,7 +12080,7 @@
       1
     ],
     "topic": "SQL ORDER BY",
-    "needs_review": true,
+    "needs_review": false,
     "id": 485,
     "source_file": "БД (2).docx (text 2/3)",
     "duplicate_count": 1,
@@ -12189,7 +12428,7 @@
       1
     ],
     "topic": "Мектеп кестесі",
-    "needs_review": true,
+    "needs_review": false,
     "id": 501,
     "source_file": "БД (2).docx (text 2/3)",
     "duplicate_count": 2,
@@ -12396,7 +12635,7 @@
       2
     ],
     "topic": "SQL SUM MIN",
-    "needs_review": false,
+    "needs_review": true,
     "id": 510,
     "source_file": "БД (2).docx (text 2/3)",
     "duplicate_count": 3,
@@ -12442,7 +12681,7 @@
       1
     ],
     "topic": "SQL AVG MAX MIN",
-    "needs_review": true,
+    "needs_review": false,
     "id": 512,
     "source_file": "БД (2).docx (text 2/3)",
     "duplicate_count": 1,
@@ -12465,7 +12704,7 @@
       2
     ],
     "topic": "SQL функциялары",
-    "needs_review": false,
+    "needs_review": true,
     "id": 513,
     "source_file": "БД (2).docx (text 2/3)",
     "duplicate_count": 0,
@@ -13095,7 +13334,7 @@
       2
     ],
     "topic": "SQL",
-    "needs_review": true,
+    "needs_review": false,
     "id": 539,
     "source_file": "БД (2).docx (text 3/3)",
     "duplicate_count": 4,
@@ -13122,7 +13361,7 @@
       1
     ],
     "topic": "SQL",
-    "needs_review": true,
+    "needs_review": false,
     "id": 540,
     "source_file": "БД (2).docx (text 3/3)",
     "duplicate_count": 1,
@@ -13318,7 +13557,7 @@
       0
     ],
     "topic": "SQL",
-    "needs_review": false,
+    "needs_review": true,
     "id": 548,
     "source_file": "БД (2).docx (text 3/3)",
     "duplicate_count": 0,
@@ -13341,7 +13580,7 @@
       2
     ],
     "topic": "SQL",
-    "needs_review": true,
+    "needs_review": false,
     "id": 549,
     "source_file": "БД (2).docx (text 3/3)",
     "duplicate_count": 1,
@@ -13751,23 +13990,27 @@
       "Бөлу амалы"
     ],
     "correct_answer_indices": [
-      0
+      2
     ],
     "topic": "SQL",
-    "needs_review": false,
+    "needs_review": true,
     "id": 567,
     "source_file": "БД (2).docx (text 3/3)",
     "duplicate_count": 1,
     "duplicate_sources": [
       "БД (2).docx (text 1/3)"
     ],
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Операция, позволяющая создать новую таблицу путём выбора из одной таблицы строк, соответствующих каждой строке второй таблицы, - ...",
     "options_ru": [
       "Операция выборки",
       "Операция вычитания",
       "Операция деления"
-    ]
+    ],
+    "previous_answer_indices": [
+      0
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Бір кестеден басқа кестеде жоқ жазбаларды (жолдарды) бөліп алуға мүмкіндік беретін амал - ...",
@@ -14053,7 +14296,7 @@
       1
     ],
     "topic": "SQL",
-    "needs_review": false,
+    "needs_review": true,
     "id": 579,
     "source_file": "БД (2).docx (text 3/3)",
     "duplicate_count": 0,
@@ -14319,7 +14562,7 @@
       0
     ],
     "topic": "SQL",
-    "needs_review": false,
+    "needs_review": true,
     "id": 590,
     "source_file": "БД (2).docx (text 3/3)",
     "duplicate_count": 0,
@@ -14527,7 +14770,7 @@
       3
     ],
     "topic": "SQL функциялары",
-    "needs_review": false,
+    "needs_review": true,
     "id": 598,
     "source_file": "БД (3).docx (text 1/2)",
     "duplicate_count": 1,
@@ -14557,7 +14800,7 @@
       1
     ],
     "topic": "Архитектура",
-    "needs_review": false,
+    "needs_review": true,
     "id": 599,
     "source_file": "БД (3).docx (text 1/2)",
     "duplicate_count": 3,
@@ -14648,7 +14891,7 @@
       3
     ],
     "topic": "Желілік модель",
-    "needs_review": false,
+    "needs_review": true,
     "id": 602,
     "source_file": "БД (3).docx (text 1/2)",
     "duplicate_count": 3,
@@ -14896,7 +15139,7 @@
       1
     ],
     "topic": null,
-    "needs_review": true,
+    "needs_review": false,
     "id": 610,
     "source_file": "БД (3).docx (text 2/2)",
     "duplicate_count": 1,
@@ -15198,7 +15441,7 @@
       1
     ],
     "topic": "Мәліметтер қоры",
-    "needs_review": false,
+    "needs_review": true,
     "id": 620,
     "source_file": "БД (3).docx (text)",
     "duplicate_count": 1,
@@ -15228,7 +15471,7 @@
       3
     ],
     "topic": "Мәліметтер қоры",
-    "needs_review": false,
+    "needs_review": true,
     "id": 621,
     "source_file": "БД (3).docx (text)",
     "duplicate_count": 1,
@@ -15587,17 +15830,17 @@
       "Постреляциялық модель"
     ],
     "correct_answer_indices": [
-      1
+      2
     ],
     "topic": "Модельдер",
-    "needs_review": false,
+    "needs_review": true,
     "id": 633,
     "source_file": "БД (3).docx (text)",
     "duplicate_count": 1,
     "duplicate_sources": [
       "БД (3).docx (text 1/2)"
     ],
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Представление связей между данными в модели БД в виде упорядоченного графа",
     "options_ru": [
       "Объектно-ориентированная модель",
@@ -15605,7 +15848,11 @@
       "Иерархическая модель",
       "Каждый потомок может иметь два и более предка",
       "Постреляционная модель"
-    ]
+    ],
+    "previous_answer_indices": [
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Қалыпты формаға тиісті пікірлер:",
@@ -16015,7 +16262,7 @@
       4
     ],
     "topic": "SQL",
-    "needs_review": false,
+    "needs_review": true,
     "id": 647,
     "source_file": "БД (3).docx (text)",
     "duplicate_count": 1,
@@ -16075,7 +16322,7 @@
       3
     ],
     "topic": "Реляциялық модель",
-    "needs_review": true,
+    "needs_review": false,
     "id": 649,
     "source_file": "БД (3).docx (text)",
     "duplicate_count": 1,
@@ -16195,7 +16442,7 @@
       2
     ],
     "topic": "Кілттер",
-    "needs_review": false,
+    "needs_review": true,
     "id": 653,
     "source_file": "БД (3).docx (text)",
     "duplicate_count": 3,
@@ -16372,6 +16619,7 @@
       "реттелген графика түрінде"
     ],
     "correct_answer_indices": [
+      1,
       3
     ],
     "topic": "Иерархиялық модель",
@@ -16382,7 +16630,7 @@
     "duplicate_sources": [
       "БД (3).docx (text 1/2)"
     ],
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "В иерархической базе данных набор данных и связь между ними описываются следующим образом:",
     "options_ru": [
       "Сетевой схемой",
@@ -16390,7 +16638,11 @@
       "таблицей",
       "древовидной структурой",
       "в виде упорядоченного графа"
-    ]
+    ],
+    "previous_answer_indices": [
+      3
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Деректерді монипуляциялау тілі командаларының негізгі типтері:",
@@ -16615,7 +16867,7 @@
       4
     ],
     "topic": "Иерархиялық модель",
-    "needs_review": false,
+    "needs_review": true,
     "id": 667,
     "source_file": "БД (3).docx (text)",
     "duplicate_count": 1,
@@ -16675,7 +16927,7 @@
       0
     ],
     "topic": "SQL SELECT",
-    "needs_review": false,
+    "needs_review": true,
     "id": 669,
     "source_file": "БД (3).docx (text)",
     "duplicate_count": 1,
@@ -16822,14 +17074,14 @@
       "ұзіксіздік"
     ],
     "correct_answer_indices": [
-      0
+      3
     ],
     "topic": "Алгоритмдер және деректер құрылымы",
-    "needs_review": false,
+    "needs_review": true,
     "id": 674,
     "source_file": "БД + Алгоритмы.docx (image1.png)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Одно из обязательных свойств алгоритмов",
     "options_ru": [
       "наглядность",
@@ -16838,7 +17090,11 @@
       "дискретность",
       "непрерывность"
     ],
-    "image": "img/database/q674.jpg"
+    "image": "img/database/q674.jpg",
+    "previous_answer_indices": [
+      0
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "int func() функциясы қайтарады",
@@ -16878,14 +17134,14 @@
       "f(0)=0, f(n)=f(n - 1)+1"
     ],
     "correct_answer_indices": [
-      0
+      3
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 676,
     "source_file": "БД + Алгоритмы.docx (image11.png)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Правильное определение функции f(n)=n!",
     "options_ru": [
       "f(0)=1, f(n)=f(n - 1)+1",
@@ -16894,7 +17150,11 @@
       "f(0)=1, f(n)=n*f(n - 1)",
       "f(0)=0, f(n)=f(n - 1)+1"
     ],
-    "image": "img/database/q676.jpg"
+    "image": "img/database/q676.jpg",
+    "previous_answer_indices": [
+      0
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "printf() функциясының дұрыс жазылуы",
@@ -16934,14 +17194,14 @@
       "квадраттық іздеу"
     ],
     "correct_answer_indices": [
-      1
+      3
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 678,
     "source_file": "БД + Алгоритмы.docx (image13.png)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Классификация алгоритмов поиска в массиве",
     "options_ru": [
       "последовательный поиск",
@@ -16950,7 +17210,11 @@
       "двоичный (бинарный) поиск",
       "квадратичный поиск"
     ],
-    "image": "img/database/q678.jpg"
+    "image": "img/database/q678.jpg",
+    "previous_answer_indices": [
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "23 17 7 8 9 1 4 6 9 2 3 1 18 тізбегі ұшын табынған біріктіктерін сұрыштаудың бірінші этапы",
@@ -16990,14 +17254,14 @@
       "(6.3.2.8.1.7.4.5)"
     ],
     "correct_answer_indices": [
-      2
+      0
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 680,
     "source_file": "БД + Алгоритмы.docx (image15.png)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Последовательность, получаемая на первом шаге алгоритма сортировки методом пузырька для начальной последовательности (6.3.2.8.1.7.4.5)",
     "options_ru": [
       "(1.2.3.8.6.7.4.5)",
@@ -17006,7 +17270,11 @@
       "(2.6.3.1.4.8.5.7)",
       "(6.3.2.8.1.7.4.5)"
     ],
-    "image": "img/database/q680.jpg"
+    "image": "img/database/q680.jpg",
+    "previous_answer_indices": [
+      2
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Көпрішкті сұрыптау алгоритмінің уақыттық құрделілігі",
@@ -17021,7 +17289,7 @@
       4
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 681,
     "source_file": "БД + Алгоритмы.docx (image16.png)",
     "duplicate_count": 0,
@@ -17046,14 +17314,14 @@
       "O(N²), o(log N), O(N³)"
     ],
     "correct_answer_indices": [
-      3
+      1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 682,
     "source_file": "БД + Алгоритмы.docx (image17.png)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Варианты, расположенные в порядке возрастания сложности алгоритма",
     "options_ru": [
       "O(N²), O(N), o(log N)",
@@ -17062,7 +17330,11 @@
       "O(N), o(1), O(N log N)",
       "O(N²), o(log N), O(N³)"
     ],
-    "image": "img/database/q682.jpg"
+    "image": "img/database/q682.jpg",
+    "previous_answer_indices": [
+      3
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "O(log n) уақытта жұмыс істейтін алгоритм",
@@ -17074,14 +17346,14 @@
       "екілік іздеу алгоритмі"
     ],
     "correct_answer_indices": [
-      1
+      4
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 683,
     "source_file": "БД + Алгоритмы.docx (image18.png)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Алгоритм, работающий за время O(log n)",
     "options_ru": [
       "алгоритм умножения двух матриц",
@@ -17090,7 +17362,11 @@
       "алгоритм определения четности-нечетности целого числа",
       "алгоритм двоичного поиска"
     ],
-    "image": "img/database/q683.jpg"
+    "image": "img/database/q683.jpg",
+    "previous_answer_indices": [
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Бір байланыстырылған тізім анықтамасы",
@@ -17158,14 +17434,14 @@
       "int* a = new int(n)"
     ],
     "correct_answer_indices": [
-      2
+      0
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 686,
     "source_file": "БД + Алгоритмы.docx (image20.png)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "В языке C++ правильная запись объявления динамического массива целого типа",
     "options_ru": [
       "int* a = new int[n]",
@@ -17174,7 +17450,11 @@
       "int a[n]",
       "int* a = new int(n)"
     ],
-    "image": "img/database/q686.jpg"
+    "image": "img/database/q686.jpg",
+    "previous_answer_indices": [
+      2
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Стек өлістеріне жатпайтын функция",
@@ -17189,7 +17469,7 @@
       3
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 687,
     "source_file": "БД + Алгоритмы.docx (image21.png)",
     "duplicate_count": 0,
@@ -17270,14 +17550,14 @@
       "квадрат ортасы әдісі"
     ],
     "correct_answer_indices": [
-      2
+      0
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 690,
     "source_file": "БД + Алгоритмы.docx (image24.png)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Метод устранения коллизий в хеш-таблице",
     "options_ru": [
       "метод открытой адресации",
@@ -17286,7 +17566,11 @@
       "метод пошагового дробления",
       "метод середины квадрата"
     ],
-    "image": "img/database/q690.jpg"
+    "image": "img/database/q690.jpg",
+    "previous_answer_indices": [
+      2
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "AVL ағашында жою операциясының орындалу уақыты",
@@ -17329,7 +17613,7 @@
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 692,
     "source_file": "БД + Алгоритмы.docx (image26.png)",
     "duplicate_count": 0,
@@ -17354,14 +17638,14 @@
       "әрбір түйіннің ен болмағанда бір ішкі ағашы бос"
     ],
     "correct_answer_indices": [
-      0
+      3
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 693,
     "source_file": "БД + Алгоритмы.docx (image27.png)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Одно из свойств красно-чёрного дерева при поиске в бинарном дереве",
     "options_ru": [
       "если значение ключа левого поддерева узла больше значения ключа узла",
@@ -17370,7 +17654,11 @@
       "если вершина красная, то оба её потомка чёрные",
       "у каждого узла хотя бы одно поддерево пустое"
     ],
-    "image": "img/database/q693.jpg"
+    "image": "img/database/q693.jpg",
+    "previous_answer_indices": [
+      0
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Графтың түйінінің атауы",
@@ -17382,14 +17670,14 @@
       "жол"
     ],
     "correct_answer_indices": [
-      3
+      2
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 694,
     "source_file": "БД + Алгоритмы.docx (image28.png)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Название узла графа",
     "options_ru": [
       "адрес",
@@ -17398,7 +17686,11 @@
       "точка",
       "путь"
     ],
-    "image": "img/database/q694.jpg"
+    "image": "img/database/q694.jpg",
+    "previous_answer_indices": [
+      3
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Барлық тебелік жүнтар үшін ең қысқа жолдарды құру есебінде ең қысқа жол изделеді",
@@ -17410,14 +17702,14 @@
       "әр тебеден бастапқы тебеге дейін"
     ],
     "correct_answer_indices": [
-      3
+      1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 695,
     "source_file": "БД + Алгоритмы.docx (image29.png)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "В задаче построения кратчайших путей для всех пар вершин ищется кратчайший путь",
     "options_ru": [
       "от начальной вершины до других вершин, находящихся на расстоянии нескольких рёбер",
@@ -17426,7 +17718,11 @@
       "от начальной вершины до других вершин",
       "от каждой вершины до начальной вершины"
     ],
-    "image": "img/database/q695.jpg"
+    "image": "img/database/q695.jpg",
+    "previous_answer_indices": [
+      3
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "C++ пішінде бағдарламаның негізгі бөлігі келтірілген. Нәтижесінде экранға шығатын жауап double x=3.5; int y; if(x==0) y=7*pow(x,3); else y=2*pow(x,3); cout<<y;",
@@ -17438,14 +17734,14 @@
       "54"
     ],
     "correct_answer_indices": [
-      1
+      2
     ],
     "topic": "C++ программирование",
-    "needs_review": false,
+    "needs_review": true,
     "id": 696,
     "source_file": "БД + Алгоритмы.docx (image3.png)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "В форме C++ приведена основная часть программы. Ответ, который выводится на экран в результате double x=3.5; int y; if(x==0) y=7*pow(x,3); else y=2*pow(x,3); cout<<y;",
     "options_ru": [
       "0",
@@ -17454,7 +17750,11 @@
       "75",
       "54"
     ],
-    "image": "img/database/q696.jpg"
+    "image": "img/database/q696.jpg",
+    "previous_answer_indices": [
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Егер байланыспаған графтың төбелерінің әркайсысы басқаларымен қабырғаларымен жалғанған болса онда ол граф",
@@ -17466,14 +17766,14 @@
       "мультиграф деп аталады"
     ],
     "correct_answer_indices": [
-      0
+      3
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 697,
     "source_file": "БД + Алгоритмы.docx (image30.png)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Если каждая из вершин несвязного графа соединена рёбрами с остальными, то такой граф",
     "options_ru": [
       "называется неполным графом",
@@ -17482,7 +17782,11 @@
       "называется полным графом",
       "называется мультиграфом"
     ],
-    "image": "img/database/q697.jpg"
+    "image": "img/database/q697.jpg",
+    "previous_answer_indices": [
+      0
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Факультет – Кафедра – Оқытушы байланысын бейнелейтін ағаштар тізімінен тұратын директер моделі",
@@ -17495,14 +17799,14 @@
       "реляциондық"
     ],
     "correct_answer_indices": [
-      5
+      1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 698,
     "source_file": "БД + Алгоритмы.docx (image31.png)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Модель директоров, состоящая из списка деревьев, отображающего связь Факультет – Кафедра – Преподаватель",
     "options_ru": [
       "объектно-ориентированная",
@@ -17512,7 +17816,11 @@
       "сетевая",
       "реляционная"
     ],
-    "image": "img/database/q698.jpg"
+    "image": "img/database/q698.jpg",
+    "previous_answer_indices": [
+      5
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Бірік­тіру (union) амалының нәтижесі",
@@ -17525,15 +17833,14 @@
       "кеміндік бір қатынастағы барлық қортеждер жиынты"
     ],
     "correct_answer_indices": [
-      0,
-      3
+      1
     ],
     "topic": null,
     "needs_review": true,
     "id": 699,
     "source_file": "БД + Алгоритмы.docx (image32.png)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Результат операции объединения (union)",
     "options_ru": [
       "множество кортежей, входящих в оба отношения",
@@ -17543,7 +17850,12 @@
       "множество кортежей, не удовлетворяющих заданному условию",
       "множество всех кортежей, входящих хотя бы в одно отношение"
     ],
-    "image": "img/database/q699.jpg"
+    "image": "img/database/q699.jpg",
+    "previous_answer_indices": [
+      0,
+      3
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Жынынан элементтерді тек берілген шарт бойынша іріктеген алу амалы",
@@ -17556,15 +17868,14 @@
       "белу"
     ],
     "correct_answer_indices": [
-      3,
       4
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 700,
     "source_file": "БД + Алгоритмы.docx (image33.png)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Операция выборки элементов из множества только по заданному условию",
     "options_ru": [
       "разность",
@@ -17574,7 +17885,12 @@
       "выборка",
       "деление"
     ],
-    "image": "img/database/q700.jpg"
+    "image": "img/database/q700.jpg",
+    "previous_answer_indices": [
+      3,
+      4
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Жалғыз мәнді атрибут",
@@ -17590,7 +17906,7 @@
       4
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 701,
     "source_file": "БД + Алгоритмы.docx (image34.png)",
     "duplicate_count": 0,
@@ -17621,7 +17937,7 @@
       5
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 702,
     "source_file": "БД + Алгоритмы.docx (image35.png)",
     "duplicate_count": 0,
@@ -17678,15 +17994,14 @@
       "SELECT Name FROM INSTRUCTOR GROUP BY DeptName = 'Биология';"
     ],
     "correct_answer_indices": [
-      3,
-      5
+      3
     ],
     "topic": "SQL",
-    "needs_review": false,
+    "needs_review": true,
     "id": 704,
     "source_file": "БД + Алгоритмы.docx (image37.png)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Какой номер запроса верен для выбора преподавателей кафедры биологии?",
     "options_ru": [
       "SELECT * FROM INSTRUCTOR WHERE DeptName <> 'Биология';",
@@ -17696,7 +18011,12 @@
       "SELECT Name FROM INSTRUCTOR",
       "SELECT Name FROM INSTRUCTOR GROUP BY DeptName = 'Биология';"
     ],
-    "image": "img/database/q704.jpg"
+    "image": "img/database/q704.jpg",
+    "previous_answer_indices": [
+      3,
+      5
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "«LIKE 'ab'%cd$' » түрінде берілген болса",
@@ -17713,7 +18033,7 @@
       2
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 705,
     "source_file": "БД + Алгоритмы.docx (image38.png)",
     "duplicate_count": 1,
@@ -17801,14 +18121,14 @@
       "Әр семестраегі сабақтар санын және оларының ағуларын шығарады"
     ],
     "correct_answer_indices": [
-      2
+      3
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 708,
     "source_file": "БД + Алгоритмы.docx (image40.png)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Что выполняет следующий SELECT Semester, COUNT(*) AS 'количество часов больше 60' FROM UCHPLAN WHERE Hours>60 GROUP BY ALL Semester",
     "options_ru": [
       "Выводит среднее значение количества занятий в каждом семестре",
@@ -17818,7 +18138,11 @@
       "Выводит количество занятий с количеством часов равным 60 в каждом семестре",
       "Выводит количество занятий в каждом семестре и их потоки"
     ],
-    "image": "img/database/q708.jpg"
+    "image": "img/database/q708.jpg",
+    "previous_answer_indices": [
+      2
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Әр проект үшін проект номері, атын және сол пројекте істеген құмыскерттер саны",
@@ -17834,7 +18158,7 @@
       1
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 709,
     "source_file": "БД + Алгоритмы.docx (image41.png)",
     "duplicate_count": 0,
@@ -17955,15 +18279,14 @@
       "SELECT T.CourseId FROM COURSE AS T WHERE UNION(SELECT R.CourseId FROM SECTION AS R"
     ],
     "correct_answer_indices": [
-      3,
-      4
+      3
     ],
     "topic": null,
     "needs_review": true,
     "id": 713,
     "source_file": "БД + Алгоритмы.docx (image45.png)",
     "duplicate_count": 0,
-    "answer_source": "marked",
+    "answer_source": "ai",
     "question_ru": "Используя оператор UNIQUE, найдите дисциплины, которые в 2021 году преподавались только один раз",
     "options_ru": [
       "SELECT T.CourseId FROM COURSE AS T WHERE UNIQUE (SELECT R.CourseId FROM SECTION AS R WHERE T.CourseId= R.CourseId OR R.Year = 2021);",
@@ -17973,7 +18296,12 @@
       "SELECT T.CourseId FROM COURSE AS T WHERE UNIQUE (SELECT CourseId FROM SECTION AS R WHERE CourseId= CourseId AND Year = 2021);",
       "SELECT T.CourseId FROM COURSE AS T WHERE UNION(SELECT R.CourseId FROM SECTION AS R"
     ],
-    "image": "img/database/q713.jpg"
+    "image": "img/database/q713.jpg",
+    "previous_answer_indices": [
+      3,
+      4
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "A) SELECT T.CourseId FROM COURSE AS T WHERE T.id = (SELECT COUNT*.CourseId) FROM SECTION AS R WHERE T.CourseId= R.CourseId AND R.Year = 2021);",
@@ -18270,7 +18598,7 @@
       3
     ],
     "topic": null,
-    "needs_review": false,
+    "needs_review": true,
     "id": 725,
     "source_file": "БД + Алгоритмы.docx (image9.png)",
     "duplicate_count": 0,
@@ -19122,14 +19450,18 @@
       "компрессия"
     ],
     "correct_answer_indices": [
-      1
+      0
     ],
     "topic": "Поддержание целостности",
-    "needs_review": false,
+    "needs_review": true,
     "id": 772,
     "source_file": "База данныхлекция.docx (text)",
     "duplicate_count": 0,
-    "answer_source": "marked"
+    "answer_source": "ai",
+    "previous_answer_indices": [
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Что такое RSS?",
@@ -19143,7 +19475,7 @@
       1
     ],
     "topic": "Системы управления БД",
-    "needs_review": false,
+    "needs_review": true,
     "id": 773,
     "source_file": "База данныхлекция.docx (text)",
     "duplicate_count": 0,
@@ -19233,7 +19565,7 @@
       1
     ],
     "topic": "Хэширование",
-    "needs_review": false,
+    "needs_review": true,
     "id": 778,
     "source_file": "База данныхлекция.docx (text)",
     "duplicate_count": 0,
@@ -19309,7 +19641,7 @@
       6
     ],
     "topic": "Базы данных",
-    "needs_review": true,
+    "needs_review": false,
     "id": 782,
     "source_file": "Тест (1).png",
     "duplicate_count": 1,
@@ -19353,9 +19685,7 @@
       "возвращает максимальное значение в указанном столбце"
     ],
     "correct_answer_indices": [
-      0,
-      1,
-      3
+      1
     ],
     "topic": "Базы данных",
     "needs_review": true,
@@ -19365,8 +19695,14 @@
     "duplicate_sources": [
       "Тест (50).png"
     ],
-    "answer_source": "marked",
-    "image": "img/database/q784.jpg"
+    "answer_source": "ai",
+    "image": "img/database/q784.jpg",
+    "previous_answer_indices": [
+      0,
+      1,
+      3
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "К операциям управления данными относятся",
@@ -19406,8 +19742,9 @@
       "select * from table where column1=1 or column1=2 or column1=3"
     ],
     "correct_answer_indices": [
-      1,
-      3
+      2,
+      3,
+      5
     ],
     "topic": "Базы данных",
     "needs_review": true,
@@ -19420,8 +19757,13 @@
       "Тест (52).png",
       "Тест (8).jpg"
     ],
-    "answer_source": "marked",
-    "image": "img/database/q786.jpg"
+    "answer_source": "ai",
+    "image": "img/database/q786.jpg",
+    "previous_answer_indices": [
+      1,
+      3
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Оператор, который завершает текущую транзакцию, отбрасывая все оказывающие изменения данных до предыдущих постоянных данных",
@@ -19434,8 +19776,7 @@
       "savepoint A"
     ],
     "correct_answer_indices": [
-      2,
-      4
+      1
     ],
     "topic": "Базы данных",
     "needs_review": true,
@@ -19446,8 +19787,13 @@
       "14.jpg",
       "photo_2023-07-21_10-29-51.jpg"
     ],
-    "answer_source": "marked",
-    "image": "img/database/q787.jpg"
+    "answer_source": "ai",
+    "image": "img/database/q787.jpg",
+    "previous_answer_indices": [
+      2,
+      4
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Запрос, который выведет названия продуктов, чье цене выше средней арифметической цены всех продуктов",
@@ -19483,7 +19829,6 @@
       "select last_name from table sort by instrlast_name,-1,1) desc"
     ],
     "correct_answer_indices": [
-      1,
       4
     ],
     "topic": "Базы данных",
@@ -19494,8 +19839,13 @@
     "duplicate_sources": [
       "Тест (54).png"
     ],
-    "answer_source": "marked",
-    "image": "img/database/q789.jpg"
+    "answer_source": "ai",
+    "image": "img/database/q789.jpg",
+    "previous_answer_indices": [
+      1,
+      4
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Оператор SELECT",
@@ -19563,19 +19913,24 @@
       "create index idx on table1(column1,column2);"
     ],
     "correct_answer_indices": [
-      4,
+      1,
       7
     ],
     "topic": "Базы данных",
-    "needs_review": false,
+    "needs_review": true,
     "id": 792,
     "source_file": "Тест (16).png",
     "duplicate_count": 1,
     "duplicate_sources": [
       "Тест (56).png"
     ],
-    "answer_source": "marked",
-    "image": "img/database/q792.jpg"
+    "answer_source": "ai",
+    "image": "img/database/q792.jpg",
+    "previous_answer_indices": [
+      4,
+      7
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Автоматическая фиксация данных происходит при обстоятельствах",
@@ -19593,7 +19948,7 @@
       4
     ],
     "topic": "Базы данных",
-    "needs_review": false,
+    "needs_review": true,
     "id": 793,
     "source_file": "Тест (17).png",
     "duplicate_count": 1,
@@ -19617,7 +19972,7 @@
       1
     ],
     "topic": "Базы данных",
-    "needs_review": false,
+    "needs_review": true,
     "id": 794,
     "source_file": "Тест (18).jpg",
     "duplicate_count": 1,
@@ -19643,7 +19998,7 @@
       5
     ],
     "topic": "Базы данных",
-    "needs_review": false,
+    "needs_review": true,
     "id": 795,
     "source_file": "Тест (18).png",
     "duplicate_count": 1,
@@ -19665,7 +20020,8 @@
       "инструмент 3D моделирования"
     ],
     "correct_answer_indices": [
-      3
+      3,
+      4
     ],
     "topic": "Базы данных",
     "needs_review": true,
@@ -19675,8 +20031,12 @@
     "duplicate_sources": [
       "Тест (59).png"
     ],
-    "answer_source": "marked",
-    "image": "img/database/q796.jpg"
+    "answer_source": "ai",
+    "image": "img/database/q796.jpg",
+    "previous_answer_indices": [
+      3
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "В таблице products есть только 3 продукта. Цена первого продукта 15000, цена второго продукта 30000, третьего 2000. Результат запроса select price from products where price>all (select 1000 from dual UNION select 10000 from dual UNION select 12000 from dual);",
@@ -19689,8 +20049,7 @@
       "15000, 2000"
     ],
     "correct_answer_indices": [
-      1,
-      3
+      0
     ],
     "topic": "Базы данных",
     "needs_review": true,
@@ -19700,8 +20059,13 @@
     "duplicate_sources": [
       "Тест (60).png"
     ],
-    "answer_source": "marked",
-    "image": "img/database/q797.jpg"
+    "answer_source": "ai",
+    "image": "img/database/q797.jpg",
+    "previous_answer_indices": [
+      1,
+      3
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Проблемы, которые предотвращают уровень изоляции транзакций READ COMMITTED",
@@ -19720,7 +20084,7 @@
       6
     ],
     "topic": "Базы данных",
-    "needs_review": false,
+    "needs_review": true,
     "id": 798,
     "source_file": "Тест (22).png",
     "duplicate_count": 1,
@@ -19747,7 +20111,7 @@
       5
     ],
     "topic": "Базы данных",
-    "needs_review": false,
+    "needs_review": true,
     "id": 799,
     "source_file": "Тест (23).png",
     "duplicate_count": 1,
@@ -19798,7 +20162,7 @@
       2
     ],
     "topic": "Базы данных",
-    "needs_review": true,
+    "needs_review": false,
     "id": 801,
     "source_file": "Тест (49).png",
     "duplicate_count": 1,
@@ -19851,7 +20215,7 @@
       3
     ],
     "topic": "Базы данных",
-    "needs_review": true,
+    "needs_review": false,
     "id": 803,
     "source_file": "Тест (53).png",
     "duplicate_count": 1,
@@ -19876,7 +20240,7 @@
       2
     ],
     "topic": "Базы данных",
-    "needs_review": false,
+    "needs_review": true,
     "id": 804,
     "source_file": "Тест (6).png",
     "duplicate_count": 1,
@@ -19898,18 +20262,23 @@
       "{1,3,4}"
     ],
     "correct_answer_indices": [
-      1
+      1,
+      3
     ],
     "topic": "Базы данных",
-    "needs_review": false,
+    "needs_review": true,
     "id": 805,
     "source_file": "Тест (7).png",
     "duplicate_count": 1,
     "duplicate_sources": [
       "Тест (47).png"
     ],
-    "answer_source": "marked",
-    "image": "img/database/q805.jpg"
+    "answer_source": "ai",
+    "image": "img/database/q805.jpg",
+    "previous_answer_indices": [
+      1
+    ],
+    "ai_confidence": "high"
   },
   {
     "question": "Основные объекты модели данных RDF",
@@ -19929,7 +20298,7 @@
       6
     ],
     "topic": "Базы данных",
-    "needs_review": false,
+    "needs_review": true,
     "id": 806,
     "source_file": "Тест (8).png",
     "duplicate_count": 1,
@@ -20049,7 +20418,7 @@
       3
     ],
     "topic": null,
-    "needs_review": true,
+    "needs_review": false,
     "id": 810,
     "source_file": "база.docx (image11.png)",
     "duplicate_count": 0,
@@ -20118,7 +20487,7 @@
       5
     ],
     "topic": null,
-    "needs_review": true,
+    "needs_review": false,
     "id": 812,
     "source_file": "база.docx (image15.png)",
     "duplicate_count": 0,
@@ -20222,7 +20591,7 @@
       3
     ],
     "topic": null,
-    "needs_review": true,
+    "needs_review": false,
     "id": 815,
     "source_file": "база.docx (image4.png)",
     "duplicate_count": 0,
@@ -20257,7 +20626,7 @@
       3
     ],
     "topic": "SQL",
-    "needs_review": true,
+    "needs_review": false,
     "id": 816,
     "source_file": "база.docx (image5.png)",
     "duplicate_count": 0,
@@ -20398,7 +20767,7 @@
       2
     ],
     "topic": null,
-    "needs_review": true,
+    "needs_review": false,
     "id": 820,
     "source_file": "база.docx (image9.png)",
     "duplicate_count": 0,
