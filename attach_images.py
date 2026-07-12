@@ -14,6 +14,7 @@ import io
 import json
 import re
 import sys
+import zipfile
 from pathlib import Path
 
 from PIL import Image
@@ -22,6 +23,21 @@ FIGURE_MARKER = re.compile(
     r"\[(Сурет|Рисунок|Фигура|График|Диаграмма|Figure)", re.I)
 MAX_WIDTH = 1400
 JPEG_QUALITY = 80
+
+
+def load_source(q: dict, images_dir: Path, docs_dir: Path | None):
+    """Locate the source image for a question: a screenshot file, an image
+    embedded in a DOCX, or a merged duplicate's screenshot."""
+    m = re.match(r"(.+\.docx) \((image[^)]+)\)", q["source_file"])
+    if m and docs_dir and (docs_dir / m.group(1)).exists():
+        with zipfile.ZipFile(docs_dir / m.group(1)) as zf:
+            entry = f"word/media/{m.group(2)}"
+            if entry in zf.namelist():
+                return Image.open(io.BytesIO(zf.read(entry)))
+    for name in [q["source_file"], *(q.get("duplicate_sources") or [])]:
+        if (images_dir / name).exists():
+            return Image.open(images_dir / name)
+    return None
 
 
 def compress(src: Path, dest: Path) -> None:
@@ -43,6 +59,8 @@ def main() -> int:
                     help="attach to every question, not only figure-marked ones")
     ap.add_argument("--include-marked", action="store_true",
                     help="also attach screenshots that reveal the marked answer")
+    ap.add_argument("--docs-dir", type=Path, default=None,
+                    help="folder with DOCX files to pull embedded images from")
     args = ap.parse_args()
 
     questions = json.loads(args.questions_file.read_text(encoding="utf-8"))
@@ -58,12 +76,17 @@ def main() -> int:
         if q.get("answer_source") == "marked" and not args.include_marked:
             skipped_marked += 1  # screenshot would reveal the correct answer
             continue
-        src = args.images_dir / q["source_file"]
-        if not src.exists():
+        img = load_source(q, args.images_dir, args.docs_dir)
+        if img is None:
             missing += 1
             continue
+        if img.width > MAX_WIDTH:
+            img = img.resize((MAX_WIDTH, round(img.height * MAX_WIDTH / img.width)))
+        if img.mode not in ("RGB", "L"):
+            img = img.convert("RGB")
         dest = site_dir / f"q{q['id']}.jpg"
-        compress(src, dest)
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        img.save(dest, format="JPEG", quality=JPEG_QUALITY)
         q["image"] = f"img/{args.topic}/{dest.name}"
         attached += 1
 
