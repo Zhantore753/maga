@@ -56,7 +56,7 @@ def build_request(q: dict, model: str) -> dict:
         "custom_id": f"q{q['id']}",
         "params": {
             "model": model,
-            "max_tokens": 4000,
+            "max_tokens": 8000,
             "system": SYSTEM_PROMPT,
             "messages": [{
                 "role": "user",
@@ -109,11 +109,15 @@ def main() -> int:
             continue
         msg = result.result.message
         text = next((b.text for b in msg.content if b.type == "text"), "")
-        tr = json.loads(text)
-        if len(tr["options_ru"]) != len(q["options"]):
+        try:
+            tr = json.loads(text)
+        except json.JSONDecodeError:
+            skipped += 1  # truncated/invalid response - keep original only
+            continue
+        if len(tr.get("options_ru", [])) != len(q["options"]):
             skipped += 1  # option count mismatch - keep original only
             continue
-        q["question_ru"] = tr["question_ru"]
+        q["question_ru"] = re.sub(r"^\s*Вопрос:\s*", "", tr["question_ru"])
         q["options_ru"] = tr["options_ru"]
         done += 1
 

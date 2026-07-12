@@ -41,6 +41,8 @@ def main() -> int:
     ap.add_argument("--topic", required=True)
     ap.add_argument("--all", action="store_true",
                     help="attach to every question, not only figure-marked ones")
+    ap.add_argument("--include-marked", action="store_true",
+                    help="also attach screenshots that reveal the marked answer")
     args = ap.parse_args()
 
     questions = json.loads(args.questions_file.read_text(encoding="utf-8"))
@@ -53,7 +55,7 @@ def main() -> int:
             continue
         if q.get("image"):
             continue
-        if q.get("answer_source") == "marked":
+        if q.get("answer_source") == "marked" and not args.include_marked:
             skipped_marked += 1  # screenshot would reveal the correct answer
             continue
         src = args.images_dir / q["source_file"]
