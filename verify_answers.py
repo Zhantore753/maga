@@ -13,6 +13,7 @@ Usage:
 """
 
 import argparse
+import base64
 import json
 import shutil
 import sys
@@ -25,23 +26,59 @@ from solve_answers import SYSTEM_PROMPT, OUTPUT_SCHEMA, build_request
 
 POLL_SECONDS = 30
 
+IMAGE_NOTE = (
+    "\n\nПриложено изображение оригинала вопроса: используйте его, чтобы "
+    "прочитать рисунок, таблицу или формулы, которых нет в тексте."
+)
+
+
+def request_with_image(q: dict, model: str, image_path: Path) -> dict:
+    """Like solve_answers.build_request, but lets the model see the original
+    question image (figure/table)."""
+    req = build_request(q, model)
+    text_block = {"type": "text",
+                  "text": req["params"]["messages"][0]["content"] + IMAGE_NOTE}
+    image_block = {
+        "type": "image",
+        "source": {
+            "type": "base64",
+            "media_type": "image/jpeg",
+            "data": base64.standard_b64encode(image_path.read_bytes()).decode(),
+        },
+    }
+    req["params"]["messages"][0]["content"] = [image_block, text_block]
+    return req
+
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[1])
     ap.add_argument("questions_file", type=Path)
     ap.add_argument("--model", default="claude-opus-4-8")
+    ap.add_argument("--site-dir", type=Path, default=Path("site"),
+                    help="root for resolving question image paths")
     args = ap.parse_args()
 
     questions = json.loads(args.questions_file.read_text(encoding="utf-8"))
     by_id = {q["id"]: q for q in questions}
     todo = [q for q in questions
             if q["correct_answer_indices"] and len(q.get("options", [])) >= 2
-            and not q.get("audio")]
+            and not q.get("audio")
+            and q.get("answer_source") != "manual"]  # human fixes are final
     print(f"{len(questions)} questions, verifying {len(todo)} with {args.model}.")
+
+    def make_request(q: dict) -> dict:
+        img = args.site_dir / q["image"] if q.get("image") else None
+        if img is not None and img.exists():
+            return request_with_image(q, args.model, img)
+        return build_request(q, args.model)
+
+    with_img = sum(1 for q in todo
+                   if q.get("image") and (args.site_dir / q["image"]).exists())
+    print(f"  ({with_img} of them verified against the original image)")
 
     client = anthropic.Anthropic()
     batch = client.messages.batches.create(
-        requests=[build_request(q, args.model) for q in todo])
+        requests=[make_request(q) for q in todo])
     print(f"Submitted batch {batch.id} ({len(todo)} requests).")
 
     while True:
